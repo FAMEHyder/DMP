@@ -12,4 +12,5 @@ const SignUp = () => {
   )
 }
 
+// here we are exporting the functional component to others components 
 export default SignUp;
