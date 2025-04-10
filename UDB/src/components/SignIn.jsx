@@ -5,8 +5,8 @@ import React from 'react';
 const SignIn = () => {
 // logic of the code goes here 
 
-    return
-    (
+    return(
+        // style of the code goes here 
         <></>
 
     )
