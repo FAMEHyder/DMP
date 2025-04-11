@@ -22,7 +22,7 @@ import logo from '../image/orignal.jpg';
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const navigate = useNavigate(); // we are using this hook to navigate in the web
+  const navigate = useNavigate(); 
   const theme = useTheme();  // we are using the theme to make the web fully responsive
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const [drawerOpen, setDrawerOpen] = useState(false);
