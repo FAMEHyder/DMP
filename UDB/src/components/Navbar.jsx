@@ -23,7 +23,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const navigate = useNavigate(); 
-  const theme = useTheme();  // we 
+  const theme = useTheme();  
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [loading, setLoading] = useState(false);
