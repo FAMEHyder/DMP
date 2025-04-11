@@ -27,7 +27,7 @@ const Navbar = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [anchorEl, setAnchorEl] = useState(null); // For dropdown menu
+  const [anchorEl, setAnchorEl] = useState(null); 
 
   const handleClick = (path) => {
     setLoading(true);
