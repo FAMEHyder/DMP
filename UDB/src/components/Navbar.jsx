@@ -52,7 +52,7 @@ const Navbar = () => {
     { label: 'CONTACT US', path: '/contact' },
     { label: 'ABOUT US', path: '/about' }
   ];
-// it is also
+// it is
   const platformItems = [
     { label: 'Facebook', path: '/facebook' },
     { label: 'Twitter', path: '/twitter' },
