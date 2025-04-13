@@ -82,7 +82,7 @@ const Navbar = () => {
                 
               }}
             />
-          )} <Typography onClick={() => handleClick('/')} sx={{fontFamily:'poppins,sans-serif', color:'white', fontWeight:800,fontSize:25, cursor:'pointer', ml:1}}>SAT-TARA</Typography>
+          )} <Typography onClick={() => handleClick('/')} sx={{fontFamily:'poppins,sans-serif', color:'white', fontWeight:800,fontSize:20, cursor:'pointer', ml:1}}>SAT-TARA</Typography>
         </Box> 
 
         {isMobile ? (
