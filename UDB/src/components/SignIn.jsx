@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { Container, Box, Typography, TextField } from '@mui/material';
 import axios from 'axios';
 import logo from '../image/orignal.jpg';
+import {useNavigate} from 'react-router-dom',
 
 // This is the functional component of the react 
 const SignIn = () => {
     // logic of the code goes here 
-
+    const navigate = useNavigate()
     const [error, setError] = useState('');
     return (
         // style of the code goes here 
