@@ -52,7 +52,18 @@ const SignIn = () => {
             >
                 Sign In
             </Typography>
-            <form style={{width:'100%'}} onSubmit={handlesubmit}></form>
+            <form style={{width:'100%'}} onSubmit={handleLogin}>
+                {error && (
+                    <Typography
+                    variant='body2'
+                    color='red'
+                    sx={{ mt: 1, mb: 1, textAlign: 'center' }}
+                    >
+                        {error}
+                    </Typography>
+                )}
+
+            </form>
 
 
         </Container>
