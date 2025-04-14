@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container, Box, Typography } from '@mui/material';
+import React, { useState } from 'react';
+import { Container, Box, Typography, TextField } from '@mui/material';
 import axios from 'axios';
 import logo from '../image/orignal.jpg';
 
@@ -7,6 +7,7 @@ import logo from '../image/orignal.jpg';
 const SignIn = () => {
     // logic of the code goes here 
 
+    const [error, setError] = useState('');
     return (
         // style of the code goes here 
         <Container
@@ -35,9 +36,9 @@ const SignIn = () => {
                     backgroundPosition: 'center',
                     alignContent: 'center',
                     justifyContent: 'center',
-                    border:'2px solid blue',
-                    borderRadius:'105px',
-                    
+                    border: '2px solid blue',
+                    borderRadius: '105px',
+
 
                 }}
             ></Box>
@@ -52,19 +53,63 @@ const SignIn = () => {
             >
                 Sign In
             </Typography>
-            <form style={{width:'100%'}} onSubmit={handleLogin}>
+            <form style={{ width: '100%' }} onSubmit={handleLogin}>
                 {error && (
                     <Typography
-                    variant='body2'
-                    color='red'
-                    sx={{ mt: 1, mb: 1, textAlign: 'center' }}
+                        variant='body2'
+                        color='red'
+                        sx={{ mt: 1, mb: 1, textAlign: 'center' }}
                     >
                         {error}
                     </Typography>
                 )}
 
-            </form>
+                <TextField
+                    label='Email'
+                    type='Email'
+                    placeholder='abs@gmail.com'
+                    variant='outlined'
+                    fullWidth
+                    margin='normal'
+                    value={Email}
+                    onChange={(e) => setEmail(e.target.value)}
 
+                />
+                <TextField
+                    label="Password"
+                    type="password"
+                    placeholder="********"
+                    variant="outlined"
+                    fullWidth
+                    margin="normal"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                <Button
+                    type="submit"
+                    variant="contained"
+                    fullWidth
+                    sx={{
+                        mt: 2,
+                        padding: { xs: 1, sm: 1.5 },
+                        fontSize: { xs: '0.8rem', sm: '1rem' },
+                    }}
+                >
+                    Login
+                </Button>
+
+            </form>
+            <Button
+                onClick={() => navigate('/signup')}
+                sx={{
+                    mt: 2,
+                    fontSize: { xs: '0.8rem', sm: '1rem' },
+                    color: 'blue',
+                    textTransform: 'none',
+                }}
+            >
+                Don't have an account? Sign up now
+            </Button>
 
         </Container>
 
@@ -72,3 +117,7 @@ const SignIn = () => {
 }
 //  here we are exporting the code 
 export default SignIn;
+
+// ip dhcp pool (any name)
+// default-router (ip of your touter)
+// network ip with subnetmask
