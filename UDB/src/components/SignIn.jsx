@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Box, Typography, TextField,Button } from '@mui/material';
 import axios from 'axios';
-import logo from '../image/orignal.jpg';
+// import logo from '../image/orignal.jpg';
+import logo from '../image/removed.png';
 import {useNavigate} from 'react-router-dom';
 
 // This is the functional component of the react 
@@ -65,7 +66,7 @@ export const SignIn = () => {
                     backgroundPosition: 'center',
                     alignContent: 'center',
                     justifyContent: 'center',
-                    border: '5px solid blue',
+                    // border: '5px solid blue',
                     borderRadius: '105px',
 
 

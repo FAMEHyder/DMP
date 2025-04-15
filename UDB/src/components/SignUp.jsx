@@ -10,7 +10,8 @@ import {
   FormControl,
   InputLabel,
 } from '@mui/material';
-import logo from '../image/orignal.jpg';
+// import logo from '../image/orignal.jpg';
+import logo from '../image/removed.png';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
@@ -85,7 +86,6 @@ const SignUp = () => {
           backgroundPosition: 'center',
           alignContent: 'center',
           justifyContent: 'center',
-          border: '5px solid blue',
           borderRadius: '105px',
         }}
       ></Box>
