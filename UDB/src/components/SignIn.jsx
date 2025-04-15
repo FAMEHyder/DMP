@@ -1,16 +1,42 @@
 import React, { useState } from 'react';
-import { Container, Box, Typography, TextField } from '@mui/material';
+import { Container, Box, Typography, TextField,Button } from '@mui/material';
 import axios from 'axios';
 import logo from '../image/orignal.jpg';
-import {useNavigate} from 'react-router-dom',
+import {useNavigate} from 'react-router-dom';
 
 // This is the functional component of the react 
-const SignIn = () => {
+export const SignIn = () => {
     // logic of the code goes here 
     const navigate = useNavigate();
     const [userName , setuserName ] = useState('');
     const [Email,setEmail] = useState('');
+    const [password ,setPassword]=useState('')
     const [error, setError] = useState('');
+
+    const handleLogin = ()=>{
+        e.preventDefault();
+        setError();
+
+        const handleLogin = async (e) => {
+            e.preventDefault();
+            setError('');
+        
+            try {
+              const response = await axios.post('http://localhost:8000/user/login', {
+                userName,
+                password,
+              });
+        
+              if (response.status === 200) {
+               
+                login(response.data)
+                navigate('/');
+              }
+            } catch (err) {
+              setError(err.response?.data?.message || 'Login failed. Please try again.');
+            }
+          };
+        }
     return (
         // style of the code goes here 
         <Container
@@ -39,7 +65,7 @@ const SignIn = () => {
                     backgroundPosition: 'center',
                     alignContent: 'center',
                     justifyContent: 'center',
-                    border: '2px solid blue',
+                    border: '5px solid blue',
                     borderRadius: '105px',
 
 
@@ -117,10 +143,6 @@ const SignIn = () => {
         </Container>
 
     )
-}
+};
 //  here we are exporting the code 
 export default SignIn;
-
-// ip dhcp pool (any name)
-// default-router (ip of your touter)
-// network ip with subnetmask

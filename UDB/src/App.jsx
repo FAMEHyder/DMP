@@ -3,6 +3,8 @@ import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import Home from './components/Home.jsx';
 import SignIn from './components/SignIn.jsx';
+import SignUp from './components/SignUp.jsx';
+import ContactUs from './components/Contact.jsx';
 function App() {
 
 
@@ -12,7 +14,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/signin' element={<SignIn />}/>
-
+        <Route path='/signup' element={<SignUp/>}/>
+        <Route path='/contact' element={<ContactUs />}/>
       </Routes>
     </Router>
   )
