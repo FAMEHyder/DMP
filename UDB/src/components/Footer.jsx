@@ -34,6 +34,9 @@ const Footer = () => {
           <Typography variant="body2">
             <Link href="/contact" color="inherit" underline="hover">Contact Us</Link>
           </Typography>
+          <Typography variant="body2">
+            <Link href="/about" color="inherit" underline="hover">About Us</Link>
+          </Typography>
         </Grid>
         
         <Grid item xs={12} md={3}>
