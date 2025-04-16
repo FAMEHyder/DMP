@@ -50,7 +50,7 @@ const Footer = () => {
               <Facebook />
             </Link>
           
-            <Link href="https://chat.whatsapp.com/Ee1j1Utvi3n2JQA24KrajX" target="_blank" color="inherit" underline="none">
+            <Link href="whatsup link will go here" target="_blank" color="inherit" underline="none">
               <WhatsApp />
             </Link>
             <Link href="https://www.instagram.com/iyef14?igsh=YWh3cTc4YnlnamJ6" target="_blank" color="inherit" underline="none">
