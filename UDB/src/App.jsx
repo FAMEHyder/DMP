@@ -5,6 +5,7 @@ import Home from './components/Home.jsx';
 import SignIn from './components/SignIn.jsx';
 import SignUp from './components/SignUp.jsx';
 import ContactUs from './components/Contact.jsx';
+import Footer from './components/Footer.jsx';
 function App() {
 
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/contact' element={<ContactUs />}/>
       </Routes>
+      <Footer/>
     </Router>
   )
 }

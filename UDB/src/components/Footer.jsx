@@ -71,7 +71,7 @@ const Footer = () => {
       
       <Box mt={4}>
         <Typography variant="body2" align="center">
-          © 2024 Iqra Youth Educational Foundation. All rights reserved.
+          © 2024 SAT-TARA DIGITAL MARKETING SERVER. All rights reserved.
         </Typography>
       </Box>
     </Box>
