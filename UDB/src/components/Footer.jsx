@@ -1,7 +1,7 @@
 import { Box, Typography, Grid, Link } from '@mui/material';
 import { Facebook, WhatsApp, Instagram} from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
-import { useAuthStore } from '../authContext/auth';
+import { useAuthStore } from '../authContext/auth.jsx';
 const Footer = () => {
   const navigate = useNavigate();
   const {user} = useAuthStore();
@@ -22,10 +22,7 @@ const Footer = () => {
         <Grid item xs={12} md={3}>
           <Typography variant="h6" gutterBottom>About Us</Typography>
           <Typography variant="body2">
-            Iqra Youth Educational Foundation is dedicated to providing quality
-            education in the Roundu region. Our mission is to nurture young minds 
-            through innovative teaching practices and create a brighter future 
-            for our community.
+            SAT-TARA DIGITAL MARKETING SERVER
           </Typography>
         </Grid>
         
