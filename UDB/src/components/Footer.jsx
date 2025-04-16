@@ -44,8 +44,8 @@ const Footer = () => {
         
         <Grid item xs={12} md={3}>
           <Typography variant="h6" gutterBottom>Contact Us</Typography>
-          <Typography variant="body2">Phone: +92-344 5254658 & +92 346 4640837</Typography>
-          <Typography variant="body2">Email: iyefofficial@gmail.com</Typography>
+          <Typography variant="body2">Phone: +92-3417405991 & +92 3554526991</Typography>
+          <Typography variant="body2">Email: famehyder9999@gmail.com</Typography>
           <Typography variant="body2">Address: Roundu Skardu, Gilgit-Baltistan</Typography>
         </Grid>
         
