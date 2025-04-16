@@ -53,7 +53,7 @@ const Footer = () => {
             <Link href="whatsup link will go here" target="_blank" color="inherit" underline="none">
               <WhatsApp />
             </Link>
-            <Link href="https://www.instagram.com/iyef14?igsh=YWh3cTc4YnlnamJ6" target="_blank" color="inherit" underline="none">
+            <Link href="instagram link will go here" target="_blank" color="inherit" underline="none">
               <Instagram />
             </Link>
           </Box>
