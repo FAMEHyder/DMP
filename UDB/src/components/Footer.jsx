@@ -17,7 +17,7 @@ const Footer = () => {
       
   }
   return (
-    <Box sx={{ backgroundColor: 'darkblue', color: 'white', padding: '20px' }}>
+    <Box sx={{ backgroundColor: 'black', color: 'white', padding: '20px' }}>
       <Grid container spacing={4}>
         <Grid item xs={12} md={3}>
           <Typography variant="h6" gutterBottom>About Us</Typography>
@@ -34,12 +34,6 @@ const Footer = () => {
           <Typography variant="body2">
             <Link href="/contact" color="inherit" underline="hover">Contact Us</Link>
           </Typography>
-          <Typography variant="body2">
-            <Link  color="inherit" underline="hover" onClick={()=>handleclick('/pre_board')}> Register for Pre-Board Exams</Link>
-          </Typography>
-          <Typography variant="body2">
-            <Link href="/members" color="inherit" underline="hover">Meet our Members</Link>
-          </Typography>
         </Grid>
         
         <Grid item xs={12} md={3}>
@@ -52,7 +46,7 @@ const Footer = () => {
         <Grid item xs={12} md={3}>
           <Typography variant="h6" gutterBottom>Follow Us</Typography>
           <Box sx={{ display: 'flex', gap: 2, alignItems: 'center', mt: 1 }}>
-            <Link href="https://www.facebook.com/profile.php?id=100083205736945" target="_blank" color="inherit" underline="none">
+            <Link href="facebook profile link will go here" target="_blank" color="inherit" underline="none">
               <Facebook />
             </Link>
           
