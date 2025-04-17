@@ -64,7 +64,7 @@ const Navbar = () => {
       <Box sx={{ fontSize: '24px', color: 'black', fontFamily: 'poppins,sans-serif', fontWeight: 900, textAlign: 'center', py: 1 }}>
         WELCOME TO THE SAT-TARA DIGITAL MARKETING SERVER
       </Box>
-      <Toolbar sx={{ height: '70px', bgcolor: 'green' }}>
+      <Toolbar sx={{ height: '70px', bgcolor: 'green' ,borderBottomRightRadius:'10px',borderBottomLeftRadius:'10px'}}>
         <Box display='flex' alignItems='center' flexGrow={1}>
           {loading ? (
             <Skeleton variant="circular" width={65} height={65} />
