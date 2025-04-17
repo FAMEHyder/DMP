@@ -60,7 +60,7 @@ const Navbar = () => {
   ];
 
   return (
-    <AppBar position="static" sx={{ bgcolor: 'white' }}>
+    <AppBar position="static" sx={{ bgcolor: 'white',borderBottomRightRadius:'10px',borderBottomLeftRadius:'10px'}}>
       <Box sx={{ fontSize: '24px', color: 'black', fontFamily: 'poppins,sans-serif', fontWeight: 900, textAlign: 'center', py: 1 }}>
         WELCOME TO THE SAT-TARA DIGITAL MARKETING SERVER
       </Box>
