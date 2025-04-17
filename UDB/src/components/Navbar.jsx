@@ -60,11 +60,11 @@ const Navbar = () => {
   ];
 
   return (
-    <AppBar position="static" sx={{ bgcolor: 'white',borderBottomRightRadius:'10px',borderBottomLeftRadius:'10px'}}>
+    <AppBar position="static" sx={{ bgcolor: 'white'}}>
       <Box sx={{ fontSize: '24px', color: 'black', fontFamily: 'poppins,sans-serif', fontWeight: 900, textAlign: 'center', py: 1 }}>
         WELCOME TO THE SAT-TARA DIGITAL MARKETING SERVER
       </Box>
-      <Toolbar sx={{ height: '70px', bgcolor: 'green' ,borderBottomRightRadius:'10px',borderBottomLeftRadius:'10px'}}>
+      <Toolbar sx={{ height: '70px', bgcolor: 'green' }}>
         <Box display='flex' alignItems='center' flexGrow={1}>
           {loading ? (
             <Skeleton variant="circular" width={65} height={65} />
