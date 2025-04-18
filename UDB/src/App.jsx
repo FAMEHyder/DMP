@@ -7,6 +7,7 @@ import SignUp from './components/SignUp.jsx';
 import ContactUs from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import About from './components/About.jsx';
+import FacebookTokenFetcher from './components/Facebook.jsx';
 function App() {
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/contact' element={<ContactUs />}/>
         <Route path='/about' element={<About />}/>
+        <Route path='/facebook' element={<FacebookTokenFetcher />}/>
       </Routes>
       <Footer/>
     </Router>
