@@ -55,8 +55,13 @@ const Navbar = () => {
 // it is also an array of objects
   const platformItems = [
     { label: 'Facebook', path: '/facebook' },
-    { label: 'Twitter', path: '/twitter' },
-    { label: 'Instagram', path: '/instagram' }
+    { label: 'X (Twitter)', path: '/twitter' },
+    { label: 'Instagram', path: '/instagram' },
+    { label: 'Ticktock', path: '/instagram' },
+    { label: 'Telegram', path: '/instagram' },
+    { label: 'Youtube', path: '/instagram' },
+    { label: 'LinkIn', path: '/instagram' },
+    { label: 'Github', path: '/instagram' }
   ];
 
   return (
