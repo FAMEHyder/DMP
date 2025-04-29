@@ -27,7 +27,7 @@ const Home = () => {
             }, 2000); // Adjust time (ms) between slides
         },
     });
-    
+
 
     const [sliderRef] = useKeenSlider({
         loop: true,
@@ -280,6 +280,50 @@ const Home = () => {
 
                     </Box>
                 </Grid>
+            </Grid>
+            <Grid >
+                <Typography fontSize={50} fontWeight={600}>Diving bussines impact should be easier</Typography>
+                <Box fontSize={32}>Sat-Tara’s unified social media management platform enables your team to extract real business
+                    value, strengthen your market position and drive revenue—quickly.
+                </Box>
+                <Box display={'flex'} gap={5} justifyContent={'space-around'}>
+                    <Box
+                        sx={{
+                            height: 300,
+                            width: 350,
+                            borderRadius: 5,
+                            bgcolor: 'green',
+                            alignContent: 'center',
+                            fontSize: 20
+                        }}
+                    >
+                        <Typography>
+                            <strong>See value faster</strong>
+                            <br />
+                            Get the insights your team has been waiting for—now. You won’t spend months
+                            onboarding, wondering how much of your budget went to learning how to use 
+                            our platform.
+                        </Typography>
+                    </Box>
+                    <Box
+                        sx={{
+                            height: 300,
+                            width: 350,
+                            borderRadius: 5,
+                            bgcolor: 'green',
+                            alignContent: 'center',
+                        }}
+                    ></Box>
+                    <Box
+                        sx={{
+                            height: 300,
+                            width: 350,
+                            borderRadius: 5,
+                            bgcolor: 'green',
+                            alignContent: 'center',
+                        }}
+                    ></Box>
+                </Box>
             </Grid>
 
         </Grid>
