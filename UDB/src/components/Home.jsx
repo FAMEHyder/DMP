@@ -10,24 +10,13 @@ import {
 import FirstImage from '../image/fb.png';
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import Dec from '../image/Dec.png';
 
 const animation = { duration: 300000, easing: (t) => t };
 
 const Home = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-
-    const [sliderRefs, instanceRef] = useKeenSlider({
-        loop: true,
-        renderMode: "performance",
-        drag: false,
-        created(s) {
-            setInterval(() => {
-                s.next();
-            }, 2000); // Adjust time (ms) between slides
-        },
-    });
-
 
     const [sliderRef] = useKeenSlider({
         loop: true,
@@ -135,7 +124,7 @@ const Home = () => {
                     />
                 </Grid>
                 {/* Keen Slider Section */}
-                <Grid container justifyContent="center" sx={{ my: 6 }}>
+                <Grid container justifyContent="center" sx={{ my: 6, mt: { xs: 45, sm: 0, md: 10 } }}>
                     <Box
                         ref={sliderRef}
                         className="keen-slider"
@@ -281,51 +270,96 @@ const Home = () => {
                     </Box>
                 </Grid>
             </Grid>
-            <Grid >
-                <Typography fontSize={50} fontWeight={600}>Diving bussines impact should be easier</Typography>
-                <Box fontSize={32}>Sat-Tara’s unified social media management platform enables your team to extract real business
+
+            {/* Three Boxes sections */}
+            <Grid
+
+                sx={{
+                    height: 800,
+                    background: 'linear-gradient(to top right, rgb(8, 39, 33),rgb(8, 39, 33),rgb(4, 75, 63), rgb(30, 147, 46))',
+                }}
+            >
+                <Typography fontSize={50} fontWeight={600} color='white' pl={2} pr={2}>Diving bussines impact should be easier</Typography>
+                <Box fontSize={32} color={'white'} pl={2} pr={2}>Sat-Tara’s unified social media management platform enables your team to extract real business
                     value, strengthen your market position and drive revenue—quickly.
                 </Box>
-                <Box display={'flex'} gap={5} justifyContent={'space-around'}>
+                <Box container display={'flex'} gap={5} justifyContent={'space-around'} mt={2} mb={2} flexDirection={isMobile ? 'column' : 'row'}
+
+                >
                     <Box
+
                         sx={{
                             height: 300,
-                            width: 350,
+                            width: { xs: 280, sm: 300, md: 350 },
                             borderRadius: 5,
-                            bgcolor: 'green',
+                            backgroundColor: 'whitesmoke',
                             alignContent: 'center',
-                            fontSize: 20
+                            fontSize: 25,
+                            pl: 2,
+                            pr: 2
                         }}
                     >
-                        <Typography>
-                            <strong>See value faster</strong>
-                            <br />
-                            Get the insights your team has been waiting for—now. You won’t spend months
-                            onboarding, wondering how much of your budget went to learning how to use 
-                            our platform.
-                        </Typography>
+
+                        <strong>See value faster</strong>
+                        <br />
+                        <br />
+                        Get the insights your team has been waiting for—now. You won’t spend months
+                        onboarding, wondering how much of your budget went to learning how to use
+                        our platform.
+
                     </Box>
                     <Box
                         sx={{
                             height: 300,
-                            width: 350,
+                            width: { xs: 280, sm: 300, md: 350 },
                             borderRadius: 5,
-                            bgcolor: 'green',
+                            backgroundColor: 'whitesmoke',
                             alignContent: 'center',
+                            fontSize: 25,
+                            pl: 2,
+                            pr: 2
                         }}
-                    ></Box>
+                    >
+                        <strong>Capture insights with ease</strong>
+                        <br />
+                        <br />
+                        Accelerate business processes with AI-powered workflows designed to save marketers
+                        valuable time, provide better access to your team to focus on more strategic thinking.
+                    </Box>
                     <Box
                         sx={{
                             height: 300,
-                            width: 350,
+                            width: { xs: 280, sm: 300, md: 350 },
                             borderRadius: 5,
-                            bgcolor: 'green',
+                            backgroundColor: 'whitesmoke',
                             alignContent: 'center',
+                            fontSize: 25,
+                            pl: 2,
+                            pr: 2
                         }}
-                    ></Box>
+                    >
+                        <strong>Transition seamlessly</strong>
+                        <br />
+                        <br />
+                        Elevate your business without rebuilding your tech stack. Our global Salesforce partnership
+                        and social network integrations make it easy to work within your current processes.
+                    </Box>
                 </Box>
-            </Grid>
+                <Box
+                    component={'img'}
+                    src={Dec}
 
+                    sx={{
+                        mt: 5,
+                        height: 200,
+                        maxWidth: 'auto',
+                        alignContent: 'center',
+                        ml: 4,
+                        borderRadius: 3
+                    }}
+                ></Box>
+            </Grid>
+            {/* here is the buttons Section  */}
         </Grid>
     );
 };

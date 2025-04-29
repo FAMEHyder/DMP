@@ -8,30 +8,20 @@ const About = () => {
                 minHeight: '100vh',
                 background: 'linear-gradient(to bottom right, rgb(8, 39, 33),rgb(8, 39, 33),rgb(8, 39, 33),rgb(4, 75, 63), rgb(30, 147, 46))',
                 color: '#fff',
-                p: 10,
+                p: 8,
             }}
         >
-            {/* <Typography variant="h4" gutterBottom textAlign="center" sx={{fontWeight:800}}>
+            <Typography variant="h4" gutterBottom textAlign="center" sx={{fontWeight:800}}>
         About Our Software
-      </Typography> */}
-            <Box
-                component={'img'}
-                src={logo}
-                height={200}
-                width={200}
-                justifyContent={'center'}
-                border={'4px solid white'}
-                borderRadius={'100px'}
-                sx={{
-                    ml:{xs:0, sm:25, md:55},
-                    mb:5
-                }}
-            ></Box>
+      </Typography>
+           
 
             <Grid container spacing={4}>
-                {[...Array(9)].map((_, index) => {
+                {[...Array(11)].map((_, index) => {
                     const titles = [
                         'Software Overview',
+                        'Account Managment',
+                        'Insights',
                         'Security & Privacy',
                         'Payment Methods',
                         'Terms & Conditions',
@@ -39,11 +29,13 @@ const About = () => {
                         'Data Management',
                         'User Interface',
                         'Integration Options',
-                        'Updates & Maintenance'
+                        'Updates & Maintenance',
                     ];
 
                     const descriptions = [
                         'Our software delivers seamless user experience with smart automation, helping teams work faster and better with minimal manual input.',
+                        'Effortlessly connect and manage multiple Facebook pages from one central dashboard.Schedule posts, automate tasks, and control access for your team with ease.',
+                        'Get real-time analytics on post performance, audience engagement, and growth.Make data-driven decisions with intuitive visual reports and metrics.',
                         'We implement top-tier security protocols with encrypted data storage and GDPR-compliant policies to ensure your information stays safe.',
                         'Enjoy the flexibility of paying locally via JazzCash, Easypaisa or internationally using Stripe, PayPal, and bank transfers.',
                         'All users must comply with our platform’s fair use and anti-abuse policies. Continued access depends on respectful, compliant usage.',
@@ -51,7 +43,7 @@ const About = () => {
                         'We handle your data with integrity and allow seamless export, import, and backups.',
                         'Our clean, responsive UI is designed for productivity and ease of use across all devices.',
                         'Easily connect with your favorite tools and APIs for a unified workflow experience.',
-                        'We provide regular updates and maintenance to keep the platform fast, secure, and reliable.'
+                        'We provide regular updates and maintenance to keep the platform fast, secure, and reliable.',
                     ];
 
                     return (
@@ -63,8 +55,8 @@ const About = () => {
                                     height: '200px',
                                     aspectRatio: '1',
                                     p: 3,
-                                    backgroundColor: index % 2 === 0 ? '#ffffff22' : '#2c3e50',
-                                    border: index % 2 === 0 ? 'none' : '1px dashed #fff',
+                                    backgroundColor: 'GrayText',
+                                    border: 'none',
                                     backdropFilter: 'blur(8px)',
                                     borderRadius: 3,
                                     display: 'flex',
