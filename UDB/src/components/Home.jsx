@@ -11,11 +11,23 @@ import FirstImage from '../image/fb.png';
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
-const animation = { duration: 50000, easing: (t) => t };
+const animation = { duration: 300000, easing: (t) => t };
 
 const Home = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
+    const [sliderRefs, instanceRef] = useKeenSlider({
+        loop: true,
+        renderMode: "performance",
+        drag: false,
+        created(s) {
+            setInterval(() => {
+                s.next();
+            }, 2000); // Adjust time (ms) between slides
+        },
+    });
+    
 
     const [sliderRef] = useKeenSlider({
         loop: true,
@@ -29,7 +41,8 @@ const Home = () => {
         },
         animationEnded(s) {
             s.moveToIdx(s.track.details.abs + 5, true, animation);
-        },
+        }
+
     });
 
     const slideStyles = {
@@ -122,7 +135,7 @@ const Home = () => {
                     />
                 </Grid>
                 {/* Keen Slider Section */}
-                <Grid container justifyContent="center" sx={{ my: 6, mt: { xs: 0, sm: 0, md: 23 } }}>
+                <Grid container justifyContent="center" sx={{ my: 6 }}>
                     <Box
                         ref={sliderRef}
                         className="keen-slider"
@@ -229,6 +242,40 @@ const Home = () => {
                             }}
                         >
                             Youtube
+                        </Box>
+                        <Box
+                            className="keen-slider__slide"
+                            sx={{
+                                ...slideStyles,
+                                width: 'auto',
+                                minWidth: '400px !important',
+                                maxWidth: '100% !important',
+                                padding: 0,
+                                margin: 0,
+                                flexShrink: 1,
+                                display: 'inline-flex', // or 'flex' based on layout
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        >
+                            Linked In
+                        </Box>
+                        <Box
+                            className="keen-slider__slide"
+                            sx={{
+                                ...slideStyles,
+                                width: 'auto',
+                                minWidth: '400px !important',
+                                maxWidth: '100% !important',
+                                padding: 0,
+                                margin: 0,
+                                flexShrink: 1,
+                                display: 'inline-flex', // or 'flex' based on layout
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        >
+                            GitHub
                         </Box>
 
                     </Box>
