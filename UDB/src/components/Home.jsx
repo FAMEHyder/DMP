@@ -360,7 +360,10 @@ const Home = () => {
                 ></Box>
             </Grid>
             {/* here is the buttons Section  */}
-            
+            <Grid>
+                
+            </Grid>
+
         </Grid>
     );
 };
