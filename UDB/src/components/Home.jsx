@@ -12,6 +12,12 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import Dec from '../image/Dec.png';
 import MailIcon from '@mui/icons-material/Mail';
+import PublishIcon from '@mui/icons-material/Publish';
+import BarChartIcon from '@mui/icons-material/BarChart';
+import HearingIcon from '@mui/icons-material/Hearing';
+import CampaignIcon from '@mui/icons-material/Campaign';
+import PeopleIcon from '@mui/icons-material/People';
+
 
 
 const animation = { duration: 300000, easing: (t) => t };
@@ -361,10 +367,24 @@ const Home = () => {
                     }}
                 ></Box>
             </Grid>
+
             {/* here is the buttons Section  */}
-            <Grid height={800}>
-                <Box>
-                    <Button MailIcon> Engagement </Button>
+
+            <Grid height={800} width={'100%'} border={'2px solid red'}>
+                <Box sx={{
+                    mt:5,
+                    display:'flex',
+                    justifyContent:'space-around',
+                    alignContent:'center',
+                    alignItems:'center',
+                    fontWeight:800
+                }}>
+                    <Button color={'black'} startIcon={<MailIcon />}> Engagement </Button>
+                    <Button color={'black'} startIcon={<PublishIcon />}> Publishing </Button>
+                    <Button color={'black'} startIcon={<BarChartIcon />}> Analystics </Button>
+                    <Button color={'black'} startIcon={<HearingIcon />}> listening </Button>
+                    <Button color={'black'} startIcon={<CampaignIcon />}> Advocacy </Button>
+                    <Button color={'black'} startIcon={<PeopleIcon />}> Influencer Marketing </Button>
                 </Box>
 
             </Grid>
