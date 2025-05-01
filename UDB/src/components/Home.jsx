@@ -1,4 +1,4 @@
-import React, { useState,useLocation } from 'react';
+import React, { useState, useLocation } from 'react';
 import {
     Box,
     Grid,
@@ -26,10 +26,10 @@ const animation = { duration: 300000, easing: (t) => t };
 const Home = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-    const [buttonItems,setButtonItems]=useState('');
+    const [buttonItems, setButtonItems] = useState('');
 
     const handleButtonClick = () => {
-        
+
     }
     const [sliderRef] = useKeenSlider({
         loop: true,
@@ -375,10 +375,9 @@ const Home = () => {
 
             {/* here is the buttons Section  */}
 
-            <Grid height={800} width={'100%'} 
-            sx={{
-                border:'2px solid red'
-            }}
+            <Grid height={800} width={'100%'}
+                sx={{
+                }}
             >
                 {/* This is the box that contain the button s */}
                 <Box sx={{
@@ -386,12 +385,11 @@ const Home = () => {
                     display: 'flex',
                     justifyContent: 'space-around',
                     alignContent: 'center',
-                    mb:4,
-                    border:'2px solid red',
-                   
+                    mb: 4,
+
 
                 }}>
-                    <Button color={'black'} startIcon={<MailIcon />} onClick={()=>{handleButtonClick}}> Engagement </Button>
+                    <Button color={'black'} startIcon={<MailIcon />} onClick={() => { handleButtonClick }}> Engagement </Button>
                     <Button color={'black'} startIcon={<PublishIcon />}> Publishing </Button>
                     <Button color={'black'} startIcon={<BarChartIcon />}> Analystics </Button>
                     <Button color={'black'} startIcon={<HearingIcon />}> listening </Button>
@@ -400,27 +398,42 @@ const Home = () => {
                 </Box>
 
                 {/* this is the box that contain the paragraph and the image  */}
-                <Box border={'2px solid green'} height={'80%'} width={"90%"} ml={8}
-                sx={{
-                    bgcolor:'lightgreen',
-                    borderRadius:5,
-                    alignContent:'center',
-                    display:'flex'
-                }}
+                <Box  height={'80%'} width={"90%"} ml={8}
+                    sx={{
+                        bgcolor: 'lightgreen',
+                        borderRadius: 5,
+                        display: 'flex',
+                        alignContent: 'center',
+                        alignItems:'center',
+                        justifyContent:'space-around',
+
+                    }}
                 >
                     {/* this is the image box  */}
                     <Box
-                    component={'img'}
-                    src={pic}
-                    sx={{
-                        height:'90vh',
-                        width:'110vh',
-                        
-                    }}
+                        component={'img'}
+                        src={pic}
+                        sx={{
+                            height: '90vh',
+                            width: '90vh',
+                            borderRadius:'5px'
+
+                        }}
                     ></Box>
                     {/* this is the para box  */}
-                    <Box border={'2px solid red'} width={'95vh'}>
-
+                    <Box  width={'80vh'} height={'90vh'}>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Soluta adipisci ullam illum, libero autem eligendi nostrum,
+                        perferendis id commodi vero ab quam repellendus totam officia
+                        labore, ut fuga earum? Consequatur aspernatur alias eos cum.
+                        Vel ducimus asperiores repudiandae atque accusamus placeat quas
+                        debitis. Facere officia ex quo sunt inventore aliquid nihil?
+                        Aliquid rem pariatur hic reiciendis mollitia! Ad in quam optio,
+                        totam rerum fugiat magnam vero repellendus quasi pariatur,
+                        nostrum et id. Et odio architecto voluptas necessitatibus.
+                        Cupiditate, in consequatur! Iste dolorum soluta pariatur alias,
+                        quisquam quas aliquam quae quia minus! Porro veritatis, sint
+                        alias voluptatum fuga architecto molestiae facere?
                     </Box>
                 </Box>
             </Grid>
