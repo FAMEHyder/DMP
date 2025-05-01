@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState,useLocation } from 'react';
 import {
     Box,
     Grid,
@@ -25,7 +25,11 @@ const animation = { duration: 300000, easing: (t) => t };
 const Home = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+    const [buttonItems,setButtonItems]=useState('');
 
+    const handleButtonClick = () => {
+        
+    }
     const [sliderRef] = useKeenSlider({
         loop: true,
         renderMode: "performance",
@@ -370,23 +374,27 @@ const Home = () => {
 
             {/* here is the buttons Section  */}
 
-            <Grid height={800} width={'100%'} border={'2px solid red'}>
+            <Grid height={800} width={'100%'} border={'2px solid red'} >
                 <Box sx={{
-                    mt:5,
-                    display:'flex',
-                    justifyContent:'space-around',
-                    alignContent:'center',
-                    alignItems:'center',
-                    fontWeight:800
+                    mt: 5,
+                    display: 'flex',
+                    justifyContent: 'space-around',
+                    alignContent: 'center',
+                    mb:4
+                   
+
                 }}>
-                    <Button color={'black'} startIcon={<MailIcon />}> Engagement </Button>
+                    <Button color={'black'} startIcon={<MailIcon />} onClick={()=>{handleButtonClick}}> Engagement </Button>
                     <Button color={'black'} startIcon={<PublishIcon />}> Publishing </Button>
                     <Button color={'black'} startIcon={<BarChartIcon />}> Analystics </Button>
                     <Button color={'black'} startIcon={<HearingIcon />}> listening </Button>
                     <Button color={'black'} startIcon={<CampaignIcon />}> Advocacy </Button>
                     <Button color={'black'} startIcon={<PeopleIcon />}> Influencer Marketing </Button>
                 </Box>
-
+                <Box border={'2px solid green'} height={'80%'} width={"90%"}>
+                    <Box></Box>
+                    <Box></Box>
+                </Box>
             </Grid>
 
         </Grid>
