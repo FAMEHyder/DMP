@@ -17,6 +17,7 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import HearingIcon from '@mui/icons-material/Hearing';
 import CampaignIcon from '@mui/icons-material/Campaign';
 import PeopleIcon from '@mui/icons-material/People';
+import pic from '../image/fb.png';
 
 
 
@@ -374,13 +375,19 @@ const Home = () => {
 
             {/* here is the buttons Section  */}
 
-            <Grid height={800} width={'100%'} border={'2px solid red'} >
+            <Grid height={800} width={'100%'} 
+            sx={{
+                border:'2px solid red'
+            }}
+            >
+                {/* This is the box that contain the button s */}
                 <Box sx={{
                     mt: 5,
                     display: 'flex',
                     justifyContent: 'space-around',
                     alignContent: 'center',
-                    mb:4
+                    mb:4,
+                    border:'2px solid red',
                    
 
                 }}>
@@ -391,9 +398,27 @@ const Home = () => {
                     <Button color={'black'} startIcon={<CampaignIcon />}> Advocacy </Button>
                     <Button color={'black'} startIcon={<PeopleIcon />}> Influencer Marketing </Button>
                 </Box>
-                <Box border={'2px solid green'} height={'80%'} width={"90%"}>
-                    <Box></Box>
-                    <Box></Box>
+
+                {/* this is the box that contain the paragraph  */}
+                <Box border={'2px solid green'} height={'80%'} width={"90%"} ml={8}
+                sx={{
+                    bgcolor:'lightgreen',
+                    borderRadius:5,
+                    alignContent:'center'
+                }}
+                >
+                    <Box
+                    component={'img'}
+                    src={pic}
+                    sx={{
+                        height:'90vh',
+                        width:'110vh',
+                        
+                    }}
+                    ></Box>
+                    <Box border={'2px solid red'}>
+
+                    </Box>
                 </Box>
             </Grid>
 
