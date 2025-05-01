@@ -399,14 +399,16 @@ const Home = () => {
                     <Button color={'black'} startIcon={<PeopleIcon />}> Influencer Marketing </Button>
                 </Box>
 
-                {/* this is the box that contain the paragraph  */}
+                {/* this is the box that contain the paragraph and the image  */}
                 <Box border={'2px solid green'} height={'80%'} width={"90%"} ml={8}
                 sx={{
                     bgcolor:'lightgreen',
                     borderRadius:5,
-                    alignContent:'center'
+                    alignContent:'center',
+                    display:'flex'
                 }}
                 >
+                    {/* this is the image box  */}
                     <Box
                     component={'img'}
                     src={pic}
@@ -416,7 +418,8 @@ const Home = () => {
                         
                     }}
                     ></Box>
-                    <Box border={'2px solid red'}>
+                    {/* this is the para box  */}
+                    <Box border={'2px solid red'} width={'95vh'}>
 
                     </Box>
                 </Box>
