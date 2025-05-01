@@ -422,7 +422,11 @@ const Home = () => {
                     ></Box>
                     {/* this is the para box  */}
                     <Box  width={'80vh'} height={'90vh'}>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor,
+                        <br />
+                        <br />
+                        
+                         sit amet consectetur adipisicing elit.
                         Soluta adipisci ullam illum, libero autem eligendi nostrum,
                         perferendis id commodi vero ab quam repellendus totam officia
                         labore, ut fuga earum? Consequatur aspernatur alias eos cum.
