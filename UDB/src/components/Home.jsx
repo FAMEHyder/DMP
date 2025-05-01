@@ -398,14 +398,14 @@ const Home = () => {
                 </Box>
 
                 {/* this is the box that contain the paragraph and the image  */}
-                <Box  height={'80%'} width={"90%"} ml={8}
+                <Box height={'80%'} width={"90%"} ml={8}
                     sx={{
                         bgcolor: 'lightgreen',
                         borderRadius: 5,
                         display: 'flex',
                         alignContent: 'center',
-                        alignItems:'center',
-                        justifyContent:'space-around',
+                        alignItems: 'center',
+                        justifyContent: 'space-around',
 
                     }}
                 >
@@ -416,17 +416,17 @@ const Home = () => {
                         sx={{
                             height: '90vh',
                             width: '90vh',
-                            borderRadius:'5px'
+                            borderRadius: '5px'
 
                         }}
                     ></Box>
                     {/* this is the para box  */}
-                    <Box  width={'80vh'} height={'90vh'}>
+                    <Box width={'80vh'} height={'90vh'}>
                         <strong>Lorem ipsum dolor,</strong>
                         <br />
                         <br />
 
-                         sit amet consectetur adipisicing elit.
+                        sit amet consectetur adipisicing elit.
                         Soluta adipisci ullam illum, libero autem eligendi nostrum,
                         perferendis id commodi vero ab quam repellendus totam officia
                         labore, ut fuga earum? Consequatur aspernatur alias eos cum.
