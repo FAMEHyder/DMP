@@ -427,7 +427,7 @@ const Home = () => {
                         
                     }}
                     >
-                        <strong>Lorem ipsum dolor,</strong>
+                        <strong>Lorem ipsum dolor</strong>
                         <br />
                         <br />
 
