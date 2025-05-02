@@ -421,7 +421,11 @@ const Home = () => {
                         }}
                     ></Box>
                     {/* this is the para box  */}
-                    <Box width={'80vh'} height={'90vh'}>
+                    <Box width={'80vh'} height={'90vh'}
+                    sx={{
+                        fontSize:25
+                    }}
+                    >
                         <strong>Lorem ipsum dolor,</strong>
                         <br />
                         <br />
