@@ -288,7 +288,7 @@ const Home = () => {
             <Grid
 
                 sx={{
-                    height:{xs:'420vh',sm:'330vh',md:'130vh',lg:'100vh'},
+                    height:{xs:'420vh',sm:'330vh',md:'130vh',lg:'130vh'},
                     background: 'linear-gradient(to top right, rgb(8, 39, 33),rgb(8, 39, 33),rgb(4, 75, 63), rgb(30, 147, 46))',
                 }}
             >
@@ -376,7 +376,7 @@ const Home = () => {
 
             {/* here is the buttons Section  */}
 
-            <Grid height={1500} width={'100%'} display={'flex'} flexDirection={isMobile ? 'column' : 'row'}
+            <Grid height={1500} width={'100%'} 
                 sx={{
                 }}
             >
@@ -402,12 +402,12 @@ const Home = () => {
                 </Box>
 
                 {/* this is the box that contain the paragraph and the image  */}
-                <Box height={'80%'} width={"90%"} ml={2}
-                flexDirection={isMobile ? 'column': 'row'}
+                <Box height={'50%'} width={"90%"} ml={2}
+                display={'flex'}
+                flexDirection={isMobile ? 'column' : 'row'}
                     sx={{
                         bgcolor: 'lightgreen',
                         borderRadius: 5,
-                        display: 'flex',
                         alignContent: 'center',
                         alignItems: 'center',
                         justifyContent: 'space-around',
@@ -420,7 +420,7 @@ const Home = () => {
                         src={pic}
                         sx={{
                             height: '90vh',
-                            width: {xs:'50vh'},
+                            width: {xs:'50vh',sm:'100vh',md : '200vh'},
                             borderRadius: '5px'
 
                         }}
@@ -429,8 +429,9 @@ const Home = () => {
                     <Box 
                     sx={{
                         height:'90vh',
-                        width:{xs:'80vh',sm:'10vh'} ,
-                        fontSize:{xs:20,sm:10,md:10},
+                        width:{xs:'50vh',sm:'100vh'} ,
+                        fontSize:{xs:20,sm:20,md:10},
+                        border:'2px solid red'
                         
                     }}
                     >
