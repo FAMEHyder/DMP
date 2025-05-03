@@ -137,7 +137,7 @@ const Home = () => {
                     />
                 </Grid>
                 {/* Keen Slider Section */}
-                <Grid container justifyContent="center" sx={{ my: 6, mt: { xs: 45, sm: 0, md: 10 } }}>
+                <Grid container justifyContent="center" sx={{ my: 6, mt: { xs: 45, sm: 40, md: 10 } }}>
                     <Box
                         ref={sliderRef}
                         className="keen-slider"
@@ -288,7 +288,7 @@ const Home = () => {
             <Grid
 
                 sx={{
-                    height: 800,
+                    height:{xs:'420vh',sm:'330vh',md:'130vh',lg:'100vh'},
                     background: 'linear-gradient(to top right, rgb(8, 39, 33),rgb(8, 39, 33),rgb(4, 75, 63), rgb(30, 147, 46))',
                 }}
             >
@@ -365,7 +365,8 @@ const Home = () => {
                     sx={{
                         mt: 5,
                         height: 200,
-                        maxWidth: 'auto',
+                        width:{xs:'55vh',sm:'140vh',md:'200vh'},
+                        backgroundSize:'cover',
                         alignContent: 'center',
                         ml: 4,
                         borderRadius: 3
@@ -375,12 +376,15 @@ const Home = () => {
 
             {/* here is the buttons Section  */}
 
-            <Grid height={800} width={'100%'}
+            <Grid height={1500} width={'100%'} display={'flex'} flexDirection={isMobile ? 'column' : 'row'}
                 sx={{
                 }}
             >
                 {/* This is the box that contain the button s */}
-                <Box sx={{
+                <Box 
+                
+                flexDirection={isMobile ? 'column':"row"}
+                sx={{
                     mt: 5,
                     display: 'flex',
                     justifyContent: 'space-around',
@@ -398,7 +402,8 @@ const Home = () => {
                 </Box>
 
                 {/* this is the box that contain the paragraph and the image  */}
-                <Box height={'80%'} width={"90%"} ml={8}
+                <Box height={'80%'} width={"90%"} ml={2}
+                flexDirection={isMobile ? 'column': 'row'}
                     sx={{
                         bgcolor: 'lightgreen',
                         borderRadius: 5,
@@ -415,15 +420,17 @@ const Home = () => {
                         src={pic}
                         sx={{
                             height: '90vh',
-                            width: '90vh',
+                            width: {xs:'50vh'},
                             borderRadius: '5px'
 
                         }}
                     ></Box>
                     {/* this is the para box  */}
-                    <Box width={'80vh'} height={'90vh'}
+                    <Box 
                     sx={{
-                        fontSize:25,
+                        height:'90vh',
+                        width:{xs:'80vh',sm:'10vh'} ,
+                        fontSize:{xs:20,sm:10,md:10},
                         
                     }}
                     >
