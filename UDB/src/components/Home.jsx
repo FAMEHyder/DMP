@@ -407,10 +407,10 @@ const Home = () => {
                 flexDirection={isMobile ? 'column' : 'row'}
                     sx={{
                         bgcolor: 'lightgreen',
-                        borderRadius: 5,
                         alignContent: 'center',
                         alignItems: 'center',
                         justifyContent: 'space-around',
+                        borderRadius: 5,
 
                     }}
                 >
@@ -420,17 +420,19 @@ const Home = () => {
                         src={pic}
                         sx={{
                             height: '90vh',
-                            width: {xs:'50vh',sm:'100vh',md : '200vh'},
+                            width: {xs:'50vh',sm:'100vh',md: '100vh'},
                             borderRadius: '5px'
 
                         }}
                     ></Box>
+
+                    
                     {/* this is the para box  */}
                     <Box 
                     sx={{
                         height:'90vh',
                         width:{xs:'50vh',sm:'100vh'} ,
-                        fontSize:{xs:20,sm:20,md:10},
+                        fontSize:{xs:12,sm:20,md:20},
                         border:'2px solid red'
                         
                     }}
