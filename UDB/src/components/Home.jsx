@@ -376,8 +376,10 @@ const Home = () => {
 
             {/* here is the buttons Section  */}
 
-            <Grid height={1500} width={'100%'} 
+            <Grid  width={'100%'} 
                 sx={{
+                    height:{xs:'170vh',sm:'150vh',md:'150vh'},
+                    ml:{sm:4,md:8}
                 }}
             >
                 {/* This is the box that contain the button s */}
@@ -419,21 +421,20 @@ const Home = () => {
                         component={'img'}
                         src={pic}
                         sx={{
-                            height: '90vh',
-                            width: {xs:'50vh',sm:'100vh',md: '100vh'},
+                            height: '50vh',
+                            width: {xs:'50vh',sm:'50vh',md: '70vh'},
                             borderRadius: '5px'
 
                         }}
                     ></Box>
 
-                    
+
                     {/* this is the para box  */}
                     <Box 
                     sx={{
                         height:'90vh',
-                        width:{xs:'50vh',sm:'100vh'} ,
-                        fontSize:{xs:12,sm:20,md:20},
-                        border:'2px solid red'
+                        width:{xs:'50vh',sm:'100vh', md:'70vh'} ,
+                        fontSize:{xs:12,sm:14,md:20},
                         
                     }}
                     >
