@@ -404,7 +404,7 @@ const Home = () => {
                 </Box>
 
                 {/* this is the box that contain the paragraph and the image  */}
-                <Box height={'50%'} width={"90%"} ml={2}
+                <Box height={'70%'} width={"90%"} ml={2}
                 display={'flex'}
                 flexDirection={isMobile ? 'column' : 'row'}
                     sx={{
