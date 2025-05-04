@@ -378,7 +378,7 @@ const Home = () => {
 
             <Grid  width={'100%'} 
                 sx={{
-                    height:{xs:'200vh',sm:'210vh',md:'140vh'},
+                    height:{xs:'200vh',sm:'210vh',md:'130vh'},
                     ml:{sm:4,md:8}
                 }}
             >
