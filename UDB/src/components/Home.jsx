@@ -378,7 +378,7 @@ const Home = () => {
 
             <Grid  width={'100%'} 
                 sx={{
-                    height:{xs:'170vh',sm:'150vh',md:'150vh'},
+                    height:{xs:'200vh',sm:'210vh',md:'140vh'},
                     ml:{sm:4,md:8}
                 }}
             >
@@ -421,8 +421,8 @@ const Home = () => {
                         component={'img'}
                         src={pic}
                         sx={{
-                            height: '50vh',
-                            width: {xs:'50vh',sm:'50vh',md: '70vh'},
+                            height: '90vh',
+                            width: {xs:'50vh',sm:'50vh',md: '80vh'},
                             borderRadius: '5px'
 
                         }}
