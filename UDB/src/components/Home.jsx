@@ -21,7 +21,7 @@ import pic from '../image/fb.png';
 
 
 
-const animation = { duration: 300000, easing: (t) => t };
+const animation = { duration: 354210, easing: (t) => t };
 
 const Home = () => {
     const theme = useTheme();
@@ -404,7 +404,7 @@ const Home = () => {
                 </Box>
 
                 {/* this is the box that contain the paragraph and the image  */}
-                <Box height={'70%'} width={"90%"} ml={2}
+                <Box height={'70%'} width={"90%"} ml={4}
                 display={'flex'}
                 flexDirection={isMobile ? 'column' : 'row'}
                     sx={{
