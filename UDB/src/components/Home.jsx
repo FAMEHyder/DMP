@@ -421,7 +421,7 @@ const Home = () => {
                         component={'img'}
                         src={pic}
                         sx={{
-                            height: '90vh',
+                            height: '80vh',
                             width: {xs:'50vh',sm:'50vh',md: '80vh'},
                             borderRadius: '5px'
 
