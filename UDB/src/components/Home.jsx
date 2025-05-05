@@ -19,6 +19,10 @@ import CampaignIcon from '@mui/icons-material/Campaign';
 import PeopleIcon from '@mui/icons-material/People';
 import Engagement from '../image/engagement.png';
 import Publishing from '../image/publishing.png';
+import Analytics from '../image/Analytics.png';
+import Listening from '../image/Listening.png';
+import Advocacy from '../image/Advocacy.png';
+import Influencer_Marketing from '../image/Influencer_Marketing.png';
 
 
 
