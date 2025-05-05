@@ -26,11 +26,37 @@ const animation = { duration: 354210, easing: (t) => t };
 const Home = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-    const [buttonItems, setButtonItems] = useState('');
+    const [buttonItems, setButtonItems] = useState('Engagement');
 
-    const handleButtonClick = () => {
-
+    const contentmap = {
+        Engagement:{
+            text:'acb',
+            image:'wed'
+        },
+        publishing:{
+            text:'acb',
+            image:'wed'
+        },
+        Analytics:{
+            text:'acb',
+            image:'wed'
+        },
+        Listenings:{
+            text:'acb',
+            image:'wed'
+        },
+        Advocacy:{
+            text:'acb',
+            image:'wed'
+        },
+        influencer_Marketing:{
+            text:'acb',
+            image:'wed'
+        },
     }
+    const handleButtonClick = (label) => {
+        setButtonItems(label);
+    };
     const [sliderRef] = useKeenSlider({
         loop: true,
         renderMode: "performance",
@@ -42,7 +68,7 @@ const Home = () => {
             s.moveToIdx(s.track.details.abs + 5, true, animation);
         },
         animationEnded(s) {
-            s.moveToIdx(s.track.details.abs + 5, true, animation);
+            s.moveToIdx(s.track.details.abs + 0, true, animation);
         }
 
     });
@@ -288,7 +314,7 @@ const Home = () => {
             <Grid
 
                 sx={{
-                    height:{xs:'420vh',sm:'330vh',md:'130vh',lg:'130vh'},
+                    height: { xs: '420vh', sm: '330vh', md: '130vh', lg: '130vh' },
                     background: 'linear-gradient(to top right, rgb(8, 39, 33),rgb(8, 39, 33),rgb(4, 75, 63), rgb(30, 147, 46))',
                 }}
             >
@@ -365,8 +391,8 @@ const Home = () => {
                     sx={{
                         mt: 5,
                         height: 200,
-                        width:{xs:'55vh',sm:'140vh',md:'200vh'},
-                        backgroundSize:'cover',
+                        width: { xs: '55vh', sm: '140vh', md: '200vh' },
+                        backgroundSize: 'cover',
                         alignContent: 'center',
                         ml: 4,
                         borderRadius: 3
@@ -376,37 +402,37 @@ const Home = () => {
 
             {/* here is the buttons Section  */}
 
-            <Grid  width={'100%'} 
+            <Grid width={'100%'}
                 sx={{
-                    height:{xs:'200vh',sm:'210vh',md:'130vh'},
-                    ml:{sm:4,md:8}
+                    height: { xs: '200vh', sm: '210vh', md: '130vh' },
+                    ml: { sm: 4, md: 8 }
                 }}
             >
                 {/* This is the box that contain the button s */}
-                <Box 
-                
-                flexDirection={isMobile ? 'column':"row"}
-                sx={{
-                    mt: 5,
-                    display: 'flex',
-                    justifyContent: 'space-around',
-                    alignContent: 'center',
-                    mb: 4,
+                <Box
+
+                    flexDirection={isMobile ? 'column' : "row"}
+                    sx={{
+                        mt: 5,
+                        display: 'flex',
+                        justifyContent: 'space-around',
+                        alignContent: 'center',
+                        mb: 4,
 
 
-                }}>
-                    <Button color={'black'} startIcon={<MailIcon />} onClick={() => { handleButtonClick }}> Engagement </Button>
-                    <Button color={'black'} startIcon={<PublishIcon />}> Publishing </Button>
-                    <Button color={'black'} startIcon={<BarChartIcon />}> Analystics </Button>
-                    <Button color={'black'} startIcon={<HearingIcon />}> listening </Button>
-                    <Button color={'black'} startIcon={<CampaignIcon />}> Advocacy </Button>
-                    <Button color={'black'} startIcon={<PeopleIcon />}> Influencer Marketing </Button>
+                    }}>
+                    <Button color="black" startIcon={<MailIcon />} onClick={() => handleButtonClick('Engagement')}>Engagement</Button>
+                    <Button color="black" startIcon={<PublishIcon />} onClick={() => handleButtonClick('Publishing')}>Publishing</Button>
+                    <Button color="black" startIcon={<BarChartIcon />} onClick={() => handleButtonClick('Analytics')}>Analytics</Button>
+                    <Button color="black" startIcon={<HearingIcon />} onClick={() => handleButtonClick('Listening')}>Listening</Button>
+                    <Button color="black" startIcon={<CampaignIcon />} onClick={() => handleButtonClick('Advocacy')}>Advocacy</Button>
+                    <Button color="black" startIcon={<PeopleIcon />} onClick={() => handleButtonClick('Influencer Marketing')}>Influencer Marketing</Button>
                 </Box>
 
                 {/* this is the box that contain the paragraph and the image  */}
                 <Box height={'70%'} width={"90%"} ml={4}
-                display={'flex'}
-                flexDirection={isMobile ? 'column' : 'row'}
+                    display={'flex'}
+                    flexDirection={isMobile ? 'column' : 'row'}
                     sx={{
                         bgcolor: 'lightgreen',
                         alignContent: 'center',
@@ -422,7 +448,7 @@ const Home = () => {
                         src={pic}
                         sx={{
                             height: '80vh',
-                            width: {xs:'50vh',sm:'50vh',md: '80vh'},
+                            width: { xs: '50vh', sm: '50vh', md: '80vh' },
                             borderRadius: '5px'
 
                         }}
@@ -430,13 +456,13 @@ const Home = () => {
 
 
                     {/* this is the para box  */}
-                    <Box 
-                    sx={{
-                        height:'90vh',
-                        width:{xs:'50vh',sm:'100vh', md:'70vh'} ,
-                        fontSize:{xs:12,sm:14,md:20},
-                        
-                    }}
+                    <Box
+                        sx={{
+                            height: '90vh',
+                            width: { xs: '50vh', sm: '100vh', md: '70vh' },
+                            fontSize: { xs: 12, sm: 14, md: 20 },
+
+                        }}
                     >
                         <strong>Lorem ipsum dolor</strong>
                         <br />
