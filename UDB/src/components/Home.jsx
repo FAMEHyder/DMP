@@ -465,7 +465,7 @@ const Home = () => {
                         sx={{
                             height: '90vh',
                             width: { xs: '50vh', sm: '100vh', md: '70vh' },
-                            fontSize: { xs: 12, sm: 14, md: 20 },
+                            fontSize: { xs: 12, sm: 14, md: 25 },
                         }}
                     >
                         <strong>{buttonItems}</strong>
