@@ -463,7 +463,8 @@ const Home = () => {
                         sx={{
                             height: '80vh',
                             width: { xs: '50vh', sm: '50vh', md: '80vh' },
-                            borderRadius: '5px'
+                            borderRadius: '20px',
+                            boxShadow:'2px 2px 2px 2px black'
                         }}
                     />
 
@@ -473,6 +474,7 @@ const Home = () => {
                             height: '90vh',
                             width: { xs: '50vh', sm: '100vh', md: '70vh' },
                             fontSize: { xs: 12, sm: 14, md: 25 },
+                            textShadow:'.5px .5px black'
                         }}
                     >
                         <strong>{buttonItems}</strong>
