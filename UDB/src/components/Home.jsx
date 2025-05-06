@@ -52,17 +52,17 @@ const Home = () => {
         Listening: {
             text: 'Listening is about more than just hearing — it’s about understanding the conversations happening around your brand, industry, and competitors in real time. Social listening tracks mentions, keywords, hashtags, and sentiment to uncover what your audience truly thinks and feels. It helps you spot trends, address concerns before they escalate, and engage meaningfully with your community. In a world where reputation moves at the speed of a tweet, listening gives you the power to stay proactive, not reactive.    ',
             image: Listening,
-            bgcolor:'purple'
+            bgcolor:'lightgreen'
         },
         Advocacy: {
             text: 'Advocacy harnesses the power of people to amplify your brand message. Whether it’s employees, loyal customers, or passionate fans, advocates help extend your reach through authentic, word-of-mouth promotion. Unlike paid ads, advocacy feels genuine — it builds trust, credibility, and community. Empowering advocates with shareable content, recognition, and incentives turns them into brand champions who speak louder than any marketing campaign ever could. In today’s trust-driven market, advocacy isn’t optional — it’s essential.',
             image: Advocacy,
-            bgcolor:'orange'
+            bgcolor:'silver'
         },
         Influencer_Marketing: {
             text: 'Influencer Marketing is about leveraging trusted voices to tell your brand’s story. By partnering with individuals who already have the attention and trust of your target audience, you can cut through the noise and deliver messages that feel personal, not promotional. It’s not just about follower count — it’s about alignment, authenticity, and impact. The right influencer can spark engagement, build credibility, and drive real results, turning influence into action.',
             image: Influencer_Marketing,
-            bgcolor:'red'
+            bgcolor:'pink'
         },
     }
     const handleButtonClick = (label) => {
