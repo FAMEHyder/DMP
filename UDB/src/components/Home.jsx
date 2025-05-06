@@ -62,7 +62,7 @@ const Home = () => {
         Influencer_Marketing: {
             text: 'Influencer Marketing is about leveraging trusted voices to tell your brand’s story. By partnering with individuals who already have the attention and trust of your target audience, you can cut through the noise and deliver messages that feel personal, not promotional. It’s not just about follower count — it’s about alignment, authenticity, and impact. The right influencer can spark engagement, build credibility, and drive real results, turning influence into action.',
             image: Influencer_Marketing,
-            bgcolor:'lightred'
+            bgcolor:'red'
         },
     }
     const handleButtonClick = (label) => {
@@ -444,8 +444,9 @@ const Home = () => {
                 <Box height={'70%'} width={"90%"} ml={4}
                     display={'flex'}
                     flexDirection={isMobile ? 'column' : 'row'}
+                    bgcolor={contentMap[buttonItems]?.bgcolor}
                     sx={{
-                        bgcolor: 'lightgreen',
+                        
                         alignContent: 'center',
                         alignItems: 'center',
                         justifyContent: 'space-around',
