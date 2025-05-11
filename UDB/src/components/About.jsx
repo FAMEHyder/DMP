@@ -9,15 +9,37 @@ const About = () => {
                 background: 'linear-gradient(to bottom right, rgb(8, 39, 33),rgb(8, 39, 33),rgb(8, 39, 33),rgb(4, 75, 63), rgb(30, 147, 46))',
                 color: '#fff',
                 p: 8,
+                
+                '&::before': {
+                    content: '""',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    height:'1110px',
+                    zIndex: -2,
+                },
+                '&::after': {
+                    content: '""',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    backgroundColor: 'rgba(0,0,0,.9)',
+                    height:'1110px',
+                    zIndex:-1
+                }
             }}
         >
-            <Typography variant="h4" gutterBottom textAlign="center" sx={{fontWeight:800}}>
-        About Our Software
-      </Typography>
-           
+            <Typography variant="h4" gutterBottom textAlign="center" sx={{ fontWeight: 800 }}>
+                About Our Software
+            </Typography>
+
 
             <Grid container spacing={4}>
-                {[...Array(11)].map((_, index) => {
+                {[...Array(12)].map((_, index) => {
                     const titles = [
                         'Software Overview',
                         'Account Managment',
@@ -30,6 +52,7 @@ const About = () => {
                         'User Interface',
                         'Integration Options',
                         'Updates & Maintenance',
+                        'Scalaibilty',
                     ];
 
                     const descriptions = [
@@ -44,6 +67,7 @@ const About = () => {
                         'Our clean, responsive UI is designed for productivity and ease of use across all devices.',
                         'Easily connect with your favorite tools and APIs for a unified workflow experience.',
                         'We provide regular updates and maintenance to keep the platform fast, secure, and reliable.',
+                        'Our Softwere is highly scalaible and it can manage a lot number of user that intarect with it ',
                     ];
 
                     return (
@@ -55,12 +79,23 @@ const About = () => {
                                     height: '200px',
                                     aspectRatio: '1',
                                     p: 3,
-                                    backgroundColor: 'GrayText',
+                                    backgroundColor: 'white',
                                     border: 'none',
                                     backdropFilter: 'blur(8px)',
                                     borderRadius: 3,
                                     display: 'flex',
-                                    flexDirection: 'column'
+                                    flexDirection: 'column',
+                                    ':hover':{
+                                        backgroundColor: 'theme.palette.primary.dark',
+                                        opacity:'.8',
+                                        transform:'scale(.98)',
+                                        boxShadow:'2px 2px 2px 2px black',
+                                        backgroundColor:'lightblue',
+                                        cursor:'pointer',
+                                        zIndex:10,
+                                        transition:'all 0.3s ease'
+                                    }
+
                                 }}
                             >
                                 <Typography variant="h6" sx={{ fontFamily: 'calibri', fontSize: 20, fontWeight: 800 }} gutterBottom>
