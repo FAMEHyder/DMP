@@ -86,13 +86,10 @@ const About = () => {
                                     display: 'flex',
                                     flexDirection: 'column',
                                     ':hover':{
-                                        backgroundColor: 'theme.palette.primary.dark',
-                                        opacity:'.8',
                                         transform:'scale(.98)',
                                         boxShadow:'2px 2px 2px 2px black',
                                         backgroundColor:'lightblue',
                                         cursor:'pointer',
-                                        zIndex:10,
                                         transition:'all 0.3s ease'
                                     }
 

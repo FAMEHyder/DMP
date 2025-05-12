@@ -469,15 +469,15 @@ const Home = () => {
                         justifyContent: 'space-around',
                         alignContent: 'center',
                         mb: 4,
-
+                        
 
                     }}>
-                    <Button color="black" startIcon={<MailIcon />} onClick={() => handleButtonClick('Engagement')}>Engagement</Button>
-                    <Button color="black" startIcon={<PublishIcon />} onClick={() => handleButtonClick('Publishing')}>Publishing</Button>
-                    <Button color="black" startIcon={<BarChartIcon />} onClick={() => handleButtonClick('Analytics')}>Analytics</Button>
-                    <Button color="black" startIcon={<HearingIcon />} onClick={() => handleButtonClick('Listening')}>Listening</Button>
-                    <Button color="black" startIcon={<CampaignIcon />} onClick={() => handleButtonClick('Advocacy')}>Advocacy</Button>
-                    <Button color="black" startIcon={<PeopleIcon />} onClick={() => handleButtonClick('Influencer_Marketing')}>Influencer Marketing</Button>
+                    <Button color="black" startIcon={<MailIcon />} onClick={() => handleButtonClick('Engagement')} sx={{':hover':{transform:'scale(.9)',transition:'all 0.3s ease-in-out',fontWeight:800}}}>Engagement</Button>
+                    <Button color="black" startIcon={<PublishIcon />} onClick={() => handleButtonClick('Publishing')} sx={{':hover':{transform:'scale(.9)',transition:'all 0.3s ease-in-out',fontWeight:800}}}>Publishing</Button>
+                    <Button color="black" startIcon={<BarChartIcon />} onClick={() => handleButtonClick('Analytics')} sx={{':hover':{transform:'scale(.9)',transition:'all 0.3s ease-in-out',fontWeight:800}}}>Analytics</Button>
+                    <Button color="black" startIcon={<HearingIcon />} onClick={() => handleButtonClick('Listening')} sx={{':hover':{transform:'scale(.9)',transition:'all 0.3s ease-in-out',fontWeight:800}}}>Listening</Button>
+                    <Button color="black" startIcon={<CampaignIcon />} onClick={() => handleButtonClick('Advocacy')} sx={{':hover':{transform:'scale(.9)',transition:'all 0.3s ease-in-out',fontWeight:800}}}>Advocacy</Button>
+                    <Button color="black" startIcon={<PeopleIcon />} onClick={() => handleButtonClick('Influencer_Marketing')} sx={{':hover':{transform:'scale(.9)',transition:'all 0.3s ease-in-out',fontWeight:800}}}>Influencer Marketing</Button>
                 </Box>
 
                 {/* this is the box that contain the paragraph and the image  */}
