@@ -22,12 +22,12 @@ import logo from '../image/orignal.jpg';
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const navigate = useNavigate(); 
-  const theme = useTheme();  
+  const navigate = useNavigate();
+  const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [anchorEl, setAnchorEl] = useState(null); 
+  const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = (path) => {
     setLoading(true);
@@ -45,14 +45,14 @@ const Navbar = () => {
   const handleMenuClose = () => {
     setAnchorEl(null); // Close dropdown
   };
-// this is an array of objects
+  // this is an array of objects
   const navItems = [
     { label: 'SIGN UP', path: '/signup' },
     { label: 'SIGN IN', path: '/signin' },
     { label: 'CONTACT US', path: '/contact' },
     { label: 'ABOUT US', path: '/about' }
   ];
-// it is also an array of objects
+  // it is also an array of objects
   const platformItems = [
     { label: 'Facebook', path: '/facebook' },
     { label: 'X (Twitter)', path: '/twitter' },
@@ -65,7 +65,7 @@ const Navbar = () => {
   ];
 
   return (
-    <AppBar position="static" sx={{ bgcolor: 'white'}}>
+    <AppBar position="static" sx={{ bgcolor: 'white' }}>
       <Box sx={{ fontSize: '24px', color: 'black', fontFamily: 'poppins,sans-serif', fontWeight: 900, textAlign: 'center', py: 1 }}>
         WELCOME TO THE SAT-TARA DIGITAL MARKETING SERVER
       </Box>
@@ -84,11 +84,27 @@ const Navbar = () => {
                 borderRadius: '90px',
                 border: '2px solid white',
                 cursor: 'pointer',
-                
+                ':hover': {
+                  backgroundColor: 'theme.palette.primary.dark',
+                  opacity: '.8',
+                  transform: 'scale(.98)',
+                  boxShadow: '2px 2px 2px 2px black',
+                  backgroundColor: 'lightblue',
+                  cursor: 'pointer',
+                  zIndex: 10,
+                  transition: 'all 0.3s ease'
+                }
               }}
             />
-          )} <Typography onClick={() => handleClick('/')} sx={{fontFamily:'poppins,sans-serif', color:'white', fontWeight:800,fontSize:20, cursor:'pointer', ml:1}}>SAT-TARA</Typography>
-        </Box> 
+          )} <Typography onClick={() => handleClick('/')} sx={{
+            fontFamily: 'poppins,sans-serif', color: 'white', fontWeight: 800, fontSize: 20, cursor: 'pointer', ml: 1, ':hover': {
+              transform: 'scale(.98)',
+              cursor: 'pointer',
+              zIndex: 10,
+              transition: 'all 0.3s ease'
+            }
+          }}>SAT-TARA</Typography>
+        </Box>
 
         {isMobile ? (
           <>
@@ -135,13 +151,13 @@ const Navbar = () => {
           <Box display='flex' justifyContent='end' flexGrow={1}>
             {loading
               ? navItems.map((_, i) => (
-                  <Skeleton key={i} variant="text" width={90} height={40} sx={{ mx: 1 }} />
-                ))
+                <Skeleton key={i} variant="text" width={90} height={40} sx={{ mx: 1 }} />
+              ))
               : navItems.map((item, index) => (
-                  <Button key={index} color='inherit' onClick={() => handleClick(item.path)}>
-                    {item.label}
-                  </Button>
-                ))}
+                <Button key={index} color='inherit' onClick={() => handleClick(item.path)}>
+                  {item.label}
+                </Button>
+              ))}
             <Button
               color='inherit'
               onClick={handleMenuClick}

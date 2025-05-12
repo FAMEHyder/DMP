@@ -37,32 +37,32 @@ const Home = () => {
         Engagement: {
             text: 'Engagement is the heartbeat of successful social media strategy. It reflects how actively your audience interacts with your content — through likes, comments, shares, and messages. High engagement not only boosts your visibility in platform algorithms but also builds trust, loyalty, and a sense of community around your brand. Its not just about posting — its about starting conversations, responding authentically, and creating content that resonates. In the attention economy, engagement is currency.',
             image: Engagement,
-            bgcolor:'lightgreen'
+            bgcolor: 'lightgreen'
         },
         Publishing: {
             text: 'Publishing is the foundation of your brand’s voice in the digital world. It involves strategically planning, creating, and distributing content across your social media channels to reach the right audience at the right time. Effective publishing goes beyond simply posting — it ensures consistency, aligns with your goals, and leverages scheduling, automation, and platform insights to maximize impact. Whether it’s a product update, a behind-the-scenes video, or a trending meme, smart publishing keeps your presence active, relevant, and connected.',
             image: Publishing,
-            bgcolor:'lightblue'
+            bgcolor: 'lightblue'
         },
         Analytics: {
             text: 'Analytics turns raw data into actionable insights. It helps you understand what’s working, what’s not, and where to pivot. From reach and impressions to click-through rates and audience demographics, analytics provides a clear picture of your performance across platforms. It empowers you to make informed decisions, refine your content strategy, and prove ROI. In short, analytics isnt just numbers — its the compass guiding your social media success.',
             image: Analytics,
-            bgcolor:'pink'
+            bgcolor: 'pink'
         },
         Listening: {
             text: 'Listening is about more than just hearing — it’s about understanding the conversations happening around your brand, industry, and competitors in real time. Social listening tracks mentions, keywords, hashtags, and sentiment to uncover what your audience truly thinks and feels. It helps you spot trends, address concerns before they escalate, and engage meaningfully with your community. In a world where reputation moves at the speed of a tweet, listening gives you the power to stay proactive, not reactive.    ',
             image: Listening,
-            bgcolor:'lightyellow'
+            bgcolor: 'lightyellow'
         },
         Advocacy: {
             text: 'Advocacy harnesses the power of people to amplify your brand message. Whether it’s employees, loyal customers, or passionate fans, advocates help extend your reach through authentic, word-of-mouth promotion. Unlike paid ads, advocacy feels genuine — it builds trust, credibility, and community. Empowering advocates with shareable content, recognition, and incentives turns them into brand champions who speak louder than any marketing campaign ever could. In today’s trust-driven market, advocacy isn’t optional — it’s essential.',
             image: Advocacy,
-            bgcolor:'silver'
+            bgcolor: 'silver'
         },
         Influencer_Marketing: {
             text: 'Influencer Marketing is about leveraging trusted voices to tell your brand’s story. By partnering with individuals who already have the attention and trust of your target audience, you can cut through the noise and deliver messages that feel personal, not promotional. It’s not just about follower count — it’s about alignment, authenticity, and impact. The right influencer can spark engagement, build credibility, and drive real results, turning influence into action.',
             image: Influencer_Marketing,
-            bgcolor:'skyblue'
+            bgcolor: 'skyblue'
         },
     }
     const handleButtonClick = (label) => {
@@ -346,7 +346,17 @@ const Home = () => {
                             alignContent: 'center',
                             fontSize: 25,
                             pl: 2,
-                            pr: 2
+                            pr: 2,
+                            ':hover': {
+                                backgroundColor: 'theme.palette.primary.dark',
+                                opacity: '.8',
+                                transform: 'scale(.98)',
+                                boxShadow: '2px 2px 2px 2px black',
+                                backgroundColor: 'lightblue',
+                                cursor: 'pointer',
+                                zIndex: 10,
+                                transition: 'all 0.3s ease'
+                            }
                         }}
                     >
 
@@ -367,7 +377,17 @@ const Home = () => {
                             alignContent: 'center',
                             fontSize: 25,
                             pl: 2,
-                            pr: 2
+                            pr: 2,
+                            ':hover': {
+                                backgroundColor: 'theme.palette.primary.dark',
+                                opacity: '.8',
+                                transform: 'scale(.98)',
+                                boxShadow: '2px 2px 2px 2px black',
+                                backgroundColor: 'lightblue',
+                                cursor: 'pointer',
+                                zIndex: 10,
+                                transition: 'all 0.3s ease'
+                            }
                         }}
                     >
                         <strong>Capture insights with ease</strong>
@@ -385,7 +405,17 @@ const Home = () => {
                             alignContent: 'center',
                             fontSize: 25,
                             pl: 2,
-                            pr: 2
+                            pr: 2,
+                            ':hover': {
+                                backgroundColor: 'theme.palette.primary.dark',
+                                opacity: '.8',
+                                transform: 'scale(.98)',
+                                boxShadow: '2px 2px 2px 2px black',
+                                backgroundColor: 'lightblue',
+                                cursor: 'pointer',
+                                zIndex: 10,
+                                transition: 'all 0.3s ease'
+                            }
                         }}
                     >
                         <strong>Transition seamlessly</strong>
@@ -406,7 +436,17 @@ const Home = () => {
                         backgroundSize: 'cover',
                         alignContent: 'center',
                         ml: 4,
-                        borderRadius: 3
+                        borderRadius: 3,
+                        ':hover': {
+                            backgroundColor: 'theme.palette.primary.dark',
+                            opacity: '.8',
+                            transform: 'scale(.98)',
+                            boxShadow: '2px 2px 2px 2px black',
+                            backgroundColor: 'lightblue',
+                            cursor: 'pointer',
+                            zIndex: 10,
+                            transition: 'all 0.3s ease'
+                        }
                     }}
                 ></Box>
             </Grid>
@@ -446,7 +486,7 @@ const Home = () => {
                     flexDirection={isMobile ? 'column' : 'row'}
                     bgcolor={contentMap[buttonItems]?.bgcolor}
                     sx={{
-                        
+
                         alignContent: 'center',
                         alignItems: 'center',
                         justifyContent: 'space-around',
@@ -464,7 +504,7 @@ const Home = () => {
                             height: '80vh',
                             width: { xs: '50vh', sm: '50vh', md: '80vh' },
                             borderRadius: '20px',
-                            boxShadow:'2px 2px 2px 2px black'
+                            boxShadow: '2px 2px 2px 2px black'
                         }}
                     />
 
@@ -474,7 +514,7 @@ const Home = () => {
                             height: '90vh',
                             width: { xs: '50vh', sm: '100vh', md: '70vh' },
                             fontSize: { xs: 12, sm: 14, md: 25 },
-                            textShadow:'.5px .5px black'
+                            textShadow: '.5px .5px black'
                         }}
                     >
                         <strong>{buttonItems}</strong>
