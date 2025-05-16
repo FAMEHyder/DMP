@@ -1,13 +1,20 @@
 import { Box, Typography, Grid, Link } from '@mui/material';
 import { Facebook, WhatsApp, Instagram} from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
-
-
+import { useAuthStore } from '../authContext/auth.jsx';
 const Footer = () => {
   const navigate = useNavigate();
+  const {user} = useAuthStore();
 
   const handleclick= (path)=> {
+    if (!user) {
+      alert('Sign in required! Click Ok to sign in');
+      navigate('/signin');
+      return;
+    }
     navigate(path); 
+   
+      
   }
   return (
     <Box sx={{ backgroundColor: 'black', color: 'white', padding: '20px' }}>
