@@ -23,6 +23,7 @@ import Analytics from '../image/Analytics.png';
 import Listening from '../image/Listening.png';
 import Advocacy from '../image/Advocacy.png';
 import Influencer_Marketing from '../image/Influencer_Marketing.png';
+import { FaTiktok, FaInstagram, FaFacebook, FaLinkedin, FaYoutube, FaXTwitter } from 'react-icons/fa6';
 
 
 
@@ -554,7 +555,12 @@ const Home = () => {
                     }}
                 >
 
-                    
+                    <FaTiktok />
+                    <FaInstagram />
+                    <FaFacebook />
+                    <FaLinkedin />
+                    <FaYoutube />
+                    <FaXTwitter />
                 </Box>
             </Grid>
 
