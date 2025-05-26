@@ -49,11 +49,11 @@ const Footer = () => {
         <Grid item xs={12} md={3}>
           <Typography variant="h6" gutterBottom>Follow Us</Typography>
           <Box sx={{ display: 'flex', gap: 2, alignItems: 'center', mt: 1 }}>
-            <Link href="https://www.facebook.com/profile.php?id=100077870918618" target="_blank" color="inherit" underline="none">
+            <Link href="https://www.facebook.com/fame.hyder" target="_blank" color="inherit" underline="none">
               <Facebook />
             </Link>
           
-            <Link href="whatsup link will go here" target="_blank" color="inherit" underline="none">
+            <Link href="https://chat.whatsapp.com/LTdgqmbPcUi5JBqLqvN8qp " target="_blank" color="inherit" underline="none">
               <WhatsApp />
             </Link>
             <Link href="instagram link will go here" target="_blank" color="inherit" underline="none">

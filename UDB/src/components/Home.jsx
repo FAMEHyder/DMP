@@ -166,7 +166,7 @@ const Home = () => {
                         src={FirstImage}
                         sx={{
                             height: { xs: 250, sm: 350, md: 450 },
-                            width: { xs: '100%', sm: 500, md: 700 },
+                            width: { xs: '100%', sm: 500, md: '140vh' },
                             ml: isMobile ? 0 : 12,
                             mt: { xs: 4, md: 20 },
                             borderRadius: '10px',
@@ -433,7 +433,7 @@ const Home = () => {
                     sx={{
                         mt: 5,
                         height: 200,
-                        width: { xs: '55vh', sm: '140vh', md: '200vh' },
+                        width: { xs: '55vh', sm: '140vh', md: '200vh',lg:'200vh' },
                         backgroundSize: 'cover',
                         alignContent: 'center',
                         ml: 4,
