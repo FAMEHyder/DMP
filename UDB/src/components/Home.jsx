@@ -23,7 +23,7 @@ import Analytics from '../image/Analytics.png';
 import Listening from '../image/Listening.png';
 import Advocacy from '../image/Advocacy.png';
 import Influencer_Marketing from '../image/Influencer_Marketing.png';
-import { FaTiktok, FaInstagram, FaFacebook, FaLinkedin, FaYoutube, FaXTwitter } from 'react-icons/fa6';
+import { FaTiktok, FaInstagram, FaFacebook, FaTwitter, FaLinkedin, FaYoutube, } from 'react-icons/fa';
 
 
 
@@ -546,21 +546,97 @@ const Home = () => {
                     <Typography fontFamily={'cambria'} fontSize={40} >Trusted partnerships & integrations across leading platforms    </Typography>
                     <Typography fontSize={25}> SDMS builds and maintains strong network partnerships and integrations to help you unify your customer touch points and keep pace with changes in the social landscape.</Typography>
                 </Box>
+
                 <Box
                     sx={{
                         border: '2px solid green',
                         width: '50%',
-                        height: '60vh'
-
+                        height: '60vh',
+                        fontSize: '10vh',
+                        display: 'flex',
+                        justifyContent: 'space-around',
+                        alignItems: 'center',
+                        flexWrap: 'wrap',
+                        gap: 2,
                     }}
                 >
+                    <Button sx={{
+                        bgcolor: '#000000',
+                        color: '#ffffff',
+                        fontSize: '10vh',
+                        
+                        '&:hover': {
+                            bgcolor: '#ffffff',
+                            color: '#000000',
+                        }
+                    }}>
+                        <FaTiktok />
+                    </Button>
 
-                    <FaTiktok />
-                    <FaInstagram />
-                    <FaFacebook />
-                    <FaLinkedin />
-                    <FaYoutube />
-                    <FaXTwitter />
+                    <Button sx={{
+                        bgcolor: '#E1306C',
+                        color: '#ffffff',
+                        fontSize: '10vh',
+                        
+                        '&:hover': {
+                            bgcolor: '#ffffff',
+                            color: '#E1306C',
+                        }
+                    }}>
+                        <FaInstagram />
+                    </Button>
+
+                    <Button sx={{
+                        bgcolor: '#1877F2',
+                        color: '#ffffff',
+                        fontSize: '10vh',
+                        
+                        '&:hover': {
+                            bgcolor: '#ffffff',
+                            color: '#1877F2',
+                        }
+                    }}>
+                        <FaFacebook />
+                    </Button>
+
+                    <Button sx={{
+                        bgcolor: '#0077B5',
+                        color: '#ffffff',
+                        fontSize: '10vh',
+                        
+                        '&:hover': {
+                            bgcolor: '#ffffff',
+                            color: '#0077B5',
+                        }
+                    }}>
+                        <FaLinkedin />
+                    </Button>
+
+                    <Button sx={{
+                        bgcolor: '#FF0000',
+                        color: '#ffffff',
+                        fontSize: '10vh',
+                        
+                        '&:hover': {
+                            bgcolor: '#ffffff',
+                            color: '#FF0000',
+                        }
+                    }}>
+                        <FaYoutube />
+                    </Button>
+
+                    <Button sx={{
+                        bgcolor: '#000000',
+                        color: '#ffffff',
+                        fontSize: '10vh',
+                        
+                        '&:hover': {
+                            bgcolor: '#ffffff',
+                            color: '#000000',
+                        }
+                    }}>
+                        <FaTwitter />
+                    </Button>
                 </Box>
             </Grid>
 
