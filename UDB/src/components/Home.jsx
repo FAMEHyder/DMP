@@ -469,15 +469,15 @@ const Home = () => {
                         justifyContent: 'space-around',
                         alignContent: 'center',
                         mb: 4,
-                        
+
 
                     }}>
-                    <Button color="black" startIcon={<MailIcon />} onClick={() => handleButtonClick('Engagement')} sx={{':hover':{transform:'scale(.9)',transition:'all 0.3s ease-in-out',fontWeight:800}}}>Engagement</Button>
-                    <Button color="black" startIcon={<PublishIcon />} onClick={() => handleButtonClick('Publishing')} sx={{':hover':{transform:'scale(.9)',transition:'all 0.3s ease-in-out',fontWeight:800}}}>Publishing</Button>
-                    <Button color="black" startIcon={<BarChartIcon />} onClick={() => handleButtonClick('Analytics')} sx={{':hover':{transform:'scale(.9)',transition:'all 0.3s ease-in-out',fontWeight:800}}}>Analytics</Button>
-                    <Button color="black" startIcon={<HearingIcon />} onClick={() => handleButtonClick('Listening')} sx={{':hover':{transform:'scale(.9)',transition:'all 0.3s ease-in-out',fontWeight:800}}}>Listening</Button>
-                    <Button color="black" startIcon={<CampaignIcon />} onClick={() => handleButtonClick('Advocacy')} sx={{':hover':{transform:'scale(.9)',transition:'all 0.3s ease-in-out',fontWeight:800}}}>Advocacy</Button>
-                    <Button color="black" startIcon={<PeopleIcon />} onClick={() => handleButtonClick('Influencer_Marketing')} sx={{':hover':{transform:'scale(.9)',transition:'all 0.3s ease-in-out',fontWeight:800}}}>Influencer Marketing</Button>
+                    <Button color="black" startIcon={<MailIcon />} onClick={() => handleButtonClick('Engagement')} sx={{ ':hover': { transform: 'scale(.9)', transition: 'all 0.3s ease-in-out', fontWeight: 800 } }}>Engagement</Button>
+                    <Button color="black" startIcon={<PublishIcon />} onClick={() => handleButtonClick('Publishing')} sx={{ ':hover': { transform: 'scale(.9)', transition: 'all 0.3s ease-in-out', fontWeight: 800 } }}>Publishing</Button>
+                    <Button color="black" startIcon={<BarChartIcon />} onClick={() => handleButtonClick('Analytics')} sx={{ ':hover': { transform: 'scale(.9)', transition: 'all 0.3s ease-in-out', fontWeight: 800 } }}>Analytics</Button>
+                    <Button color="black" startIcon={<HearingIcon />} onClick={() => handleButtonClick('Listening')} sx={{ ':hover': { transform: 'scale(.9)', transition: 'all 0.3s ease-in-out', fontWeight: 800 } }}>Listening</Button>
+                    <Button color="black" startIcon={<CampaignIcon />} onClick={() => handleButtonClick('Advocacy')} sx={{ ':hover': { transform: 'scale(.9)', transition: 'all 0.3s ease-in-out', fontWeight: 800 } }}>Advocacy</Button>
+                    <Button color="black" startIcon={<PeopleIcon />} onClick={() => handleButtonClick('Influencer_Marketing')} sx={{ ':hover': { transform: 'scale(.9)', transition: 'all 0.3s ease-in-out', fontWeight: 800 } }}>Influencer Marketing</Button>
                 </Box>
 
                 {/* this is the box that contain the paragraph and the image  */}
@@ -523,6 +523,38 @@ const Home = () => {
                         {contentMap[buttonItems]?.text}
                     </Box>
 
+                </Box>
+            </Grid>
+
+            <Grid
+                sx={{
+                    border: '2px solid red',
+                    width: '100%',
+                    display: 'flex'
+                }}
+            >
+                <Box
+
+                    sx={{
+                        border: '2px solid black',
+                        width: '50%',
+                        height: '60vh'
+                    }}
+
+                >
+                    <Typography fontFamily={'cambria'} fontSize={40} >Trusted partnerships & integrations across leading platforms    </Typography>
+                    <Typography fontSize={25}> SDMS builds and maintains strong network partnerships and integrations to help you unify your customer touch points and keep pace with changes in the social landscape.</Typography>
+                </Box>
+                <Box
+                    sx={{
+                        border: '2px solid green',
+                        width: '50%',
+                        height: '60vh'
+
+                    }}
+                >
+
+                    
                 </Box>
             </Grid>
 
