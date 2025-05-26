@@ -473,101 +473,101 @@ const Home = () => {
 
 
                     }}>
-                    <Button
-                        startIcon={<MailIcon />}
-                        onClick={() => handleButtonClick('Engagement')}
-                        sx={{
-                            color: '#4caf50',
-                            transition: 'all 0.3s ease-in-out',
-                            '&:hover': {
-                                color: '#4caf50',
-                                transform: 'scale(.9)',
-                                fontWeight: 800
-                            }
-                        }}
-                    >
-                        Engagement
-                    </Button>
+<Button 
+  startIcon={<MailIcon />} 
+  onClick={() => handleButtonClick('Engagement')} 
+  sx={{ 
+    color: '#4caf50', 
+    transition: 'all 0.3s ease-in-out', 
+    '&:hover': { 
+      color: '#4caf50', 
+      transform: 'scale(.9)', 
+      fontWeight: 800 
+    } 
+  }}
+>
+  Engagement
+</Button>
 
-                    <Button
-                        startIcon={<PublishIcon />}
-                        onClick={() => handleButtonClick('Publishing')}
-                        sx={{
-                            color: '#2196f3',
-                            transition: 'all 0.3s ease-in-out',
-                            '&:hover': {
-                                color: '#2196f3',
-                                transform: 'scale(.9)',
-                                fontWeight: 800
-                            }
-                        }}
-                    >
-                        Publishing
-                    </Button>
+<Button 
+  startIcon={<PublishIcon />} 
+  onClick={() => handleButtonClick('Publishing')} 
+  sx={{ 
+    color: '#2196f3', 
+    transition: 'all 0.3s ease-in-out', 
+    '&:hover': { 
+      color: '#2196f3', 
+      transform: 'scale(.9)', 
+      fontWeight: 800 
+    } 
+  }}
+>
+  Publishing
+</Button>
 
-                    <Button
-                        startIcon={<BarChartIcon />}
-                        onClick={() => handleButtonClick('Analytics')}
-                        sx={{
-                            color: '#9c27b0',
-                            transition: 'all 0.3s ease-in-out',
-                            '&:hover': {
-                                color: '#9c27b0',
-                                transform: 'scale(.9)',
-                                fontWeight: 800
-                            }
-                        }}
-                    >
-                        Analytics
-                    </Button>
+<Button 
+  startIcon={<BarChartIcon />} 
+  onClick={() => handleButtonClick('Analytics')} 
+  sx={{ 
+    color: '#9c27b0', 
+    transition: 'all 0.3s ease-in-out', 
+    '&:hover': { 
+      color: '#9c27b0', 
+      transform: 'scale(.9)', 
+      fontWeight: 800 
+    } 
+  }}
+>
+  Analytics
+</Button>
 
-                    <Button
-                        startIcon={<HearingIcon />}
-                        onClick={() => handleButtonClick('Listening')}
-                        sx={{
-                            color: '#ff9800',
-                            transition: 'all 0.3s ease-in-out',
-                            '&:hover': {
-                                color: '#ff9800',
-                                transform: 'scale(.9)',
-                                fontWeight: 800
-                            }
-                        }}
-                    >
-                        Listening
-                    </Button>
+<Button 
+  startIcon={<HearingIcon />} 
+  onClick={() => handleButtonClick('Listening')} 
+  sx={{ 
+    color: '#ff9800', 
+    transition: 'all 0.3s ease-in-out', 
+    '&:hover': { 
+      color: '#ff9800', 
+      transform: 'scale(.9)', 
+      fontWeight: 800 
+    } 
+  }}
+>
+  Listening
+</Button>
 
-                    <Button
-                        startIcon={<CampaignIcon />}
-                        onClick={() => handleButtonClick('Advocacy')}
-                        sx={{
-                            color: '#f44336',
-                            transition: 'all 0.3s ease-in-out',
-                            '&:hover': {
-                                color: '#f44336',
-                                transform: 'scale(.9)',
-                                fontWeight: 800
-                            }
-                        }}
-                    >
-                        Advocacy
-                    </Button>
+<Button 
+  startIcon={<CampaignIcon />} 
+  onClick={() => handleButtonClick('Advocacy')} 
+  sx={{ 
+    color: '#f44336', 
+    transition: 'all 0.3s ease-in-out', 
+    '&:hover': { 
+      color: '#f44336', 
+      transform: 'scale(.9)', 
+      fontWeight: 800 
+    } 
+  }}
+>
+  Advocacy
+</Button>
 
-                    <Button
-                        startIcon={<PeopleIcon />}
-                        onClick={() => handleButtonClick('Influencer_Marketing')}
-                        sx={{
-                            color: '#3f51b5',
-                            transition: 'all 0.3s ease-in-out',
-                            '&:hover': {
-                                color: '#3f51b5',
-                                transform: 'scale(.9)',
-                                fontWeight: 800
-                            }
-                        }}
-                    >
-                        Influencer Marketing
-                    </Button>
+<Button 
+  startIcon={<PeopleIcon />} 
+  onClick={() => handleButtonClick('Influencer_Marketing')} 
+  sx={{ 
+    color: '#3f51b5', 
+    transition: 'all 0.3s ease-in-out', 
+    '&:hover': { 
+      color: '#3f51b5', 
+      transform: 'scale(.9)', 
+      fontWeight: 800 
+    } 
+  }}
+>
+  Influencer Marketing
+</Button>
 
                 </Box>
 
@@ -616,68 +616,86 @@ const Home = () => {
 
                 </Box>
             </Grid>
+{/* this is the place from where the user can sign in to his social plate forms */}
+           <Grid
+  sx={{
+    width: '100%',
+    display: 'flex',
+  }}
+>
+  <Box
+    sx={{
+      width: '50%',
+      height: { xs: 'auto', md: '60vh' }, // let height be flexible on small screens
+      px: { xs: 1, md: 4 },
+      boxSizing: 'border-box',
+      overflowWrap: 'break-word',
+    }}
+  >
+    <Typography
+      fontFamily="cambria"
+      fontSize={{ xs: 24, sm: 32, md: 40 }} // responsive font size
+      pl={2}
+      pr={2}
+      mb={1}
+    >
+      Trusted partnerships & integrations across leading platforms
+    </Typography>
+    <Typography
+      fontSize={{ xs: 14, sm: 20, md: 25 }} // responsive font size
+      pl={2}
+      pr={2}
+    >
+      SDMS builds and maintains strong network partnerships and integrations to help you unify your customer touch points and keep pace with changes in the social landscape.
+    </Typography>
+  </Box>
 
-            <Grid
-                sx={{
-                    width: '100%',
-                    display: 'flex'
-                }}
-            >
-                <Box
+  <Box
+    sx={{
+      width: '50%',
+      height: { xs: 'auto', md: '60vh' },
+      fontSize: { xs: 36, sm: 50, md: '10vh' }, // responsive font size for icons
+      display: 'flex',
+      justifyContent: 'space-around',
+      alignItems: 'center',
+      flexWrap: 'wrap',
+      gap: 2,
+      px: { xs: 1, md: 0 },
+      boxSizing: 'border-box',
+    }}
+  >
+    {[
+      { icon: <FaTiktok />, color: '#000000' },
+      { icon: <FaInstagram />, color: '#E1306C' },
+      { icon: <FaFacebook />, color: '#1877F2' },
+      { icon: <FaLinkedin />, color: '#0077B5' },
+      { icon: <FaYoutube />, color: '#FF0000' },
+      { icon: <FaTwitter />, color: '#000000' },
+    ].map((item, i) => (
+      <Button
+        key={i}
+        sx={{
+          bgcolor: item.color,
+          color: '#ffffff',
+          fontSize: { xs: 32, sm: 40, md: '10vh' }, // scale icons nicely
+          boxShadow: `10px 8px 20px ${item.color}80`,
+          transition: 'all 0.3s ease-in-out',
+          '&:hover': {
+            bgcolor: '#ffffff',
+            color: item.color,
+            transform: 'scale(1.1)',
+          },
+          minWidth: 64,
+          minHeight: 64,
+          borderRadius: 2,
+        }}
+      >
+        {item.icon}
+      </Button>
+    ))}
+  </Box>
+</Grid>
 
-                    sx={{
-                        width: '50%',
-                        height: '60vh',
-
-                    }}
-
-                >
-                    <Typography fontFamily={'cambria'} fontSize={40} pl={4} pr={4}>Trusted partnerships & integrations across leading platforms    </Typography>
-                    <Typography fontSize={25} pl={4} pr={4}> SDMS builds and maintains strong network partnerships and integrations to help you unify your customer touch points and keep pace with changes in the social landscape.</Typography>
-                </Box>
-
-                <Box
-                    sx={{
-                        width: '50%',
-                        height: '60vh',
-                        fontSize: '10vh',
-                        display: 'flex',
-                        justifyContent: 'space-around',
-                        alignItems: 'center',
-                        flexWrap: 'wrap',
-                        gap: 2,
-                    }}
-                >
-                    {[
-                        { icon: <FaTiktok />, color: '#000000' },
-                        { icon: <FaInstagram />, color: '#E1306C' },
-                        { icon: <FaFacebook />, color: '#1877F2' },
-                        { icon: <FaLinkedin />, color: '#0077B5' },
-                        { icon: <FaYoutube />, color: '#FF0000' },
-                        { icon: <FaTwitter />, color: '#000000' },
-                    ].map((item, i) => (
-                        <Button
-                            key={i}
-                            sx={{
-                                bgcolor: item.color,
-                                color: '#ffffff',
-                                fontSize: '10vh',
-                                boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.3)',
-                                transition: 'all 0.3s ease-in-out',
-                                boxShadow: `10px 8px 20px ${item.color}80`, // 80 = ~50% opacity
-                                '&:hover': {
-                                    bgcolor: '#ffffff',
-                                    color: item.color,
-                                    transform: 'scale(1.1)',
-                                },
-                            }}
-                        >
-                            {item.icon}
-                        </Button>
-                    ))}
-                </Box>
-
-            </Grid>
 
         </Grid>
     );
