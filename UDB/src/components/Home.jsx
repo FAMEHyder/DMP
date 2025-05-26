@@ -473,12 +473,102 @@ const Home = () => {
 
 
                     }}>
-                    <Button color="black" startIcon={<MailIcon />} onClick={() => handleButtonClick('Engagement')} sx={{ ':hover': { transform: 'scale(.9)', transition: 'all 0.3s ease-in-out', fontWeight: 800 } }}>Engagement</Button>
-                    <Button color="black" startIcon={<PublishIcon />} onClick={() => handleButtonClick('Publishing')} sx={{ ':hover': { transform: 'scale(.9)', transition: 'all 0.3s ease-in-out', fontWeight: 800 } }}>Publishing</Button>
-                    <Button color="black" startIcon={<BarChartIcon />} onClick={() => handleButtonClick('Analytics')} sx={{ ':hover': { transform: 'scale(.9)', transition: 'all 0.3s ease-in-out', fontWeight: 800 } }}>Analytics</Button>
-                    <Button color="black" startIcon={<HearingIcon />} onClick={() => handleButtonClick('Listening')} sx={{ ':hover': { transform: 'scale(.9)', transition: 'all 0.3s ease-in-out', fontWeight: 800 } }}>Listening</Button>
-                    <Button color="black" startIcon={<CampaignIcon />} onClick={() => handleButtonClick('Advocacy')} sx={{ ':hover': { transform: 'scale(.9)', transition: 'all 0.3s ease-in-out', fontWeight: 800 } }}>Advocacy</Button>
-                    <Button color="black" startIcon={<PeopleIcon />} onClick={() => handleButtonClick('Influencer_Marketing')} sx={{ ':hover': { transform: 'scale(.9)', transition: 'all 0.3s ease-in-out', fontWeight: 800 } }}>Influencer Marketing</Button>
+                    <Button
+                        startIcon={<MailIcon />}
+                        onClick={() => handleButtonClick('Engagement')}
+                        sx={{
+                            color: '#4caf50',
+                            transition: 'all 0.3s ease-in-out',
+                            '&:hover': {
+                                color: '#4caf50',
+                                transform: 'scale(.9)',
+                                fontWeight: 800
+                            }
+                        }}
+                    >
+                        Engagement
+                    </Button>
+
+                    <Button
+                        startIcon={<PublishIcon />}
+                        onClick={() => handleButtonClick('Publishing')}
+                        sx={{
+                            color: '#2196f3',
+                            transition: 'all 0.3s ease-in-out',
+                            '&:hover': {
+                                color: '#2196f3',
+                                transform: 'scale(.9)',
+                                fontWeight: 800
+                            }
+                        }}
+                    >
+                        Publishing
+                    </Button>
+
+                    <Button
+                        startIcon={<BarChartIcon />}
+                        onClick={() => handleButtonClick('Analytics')}
+                        sx={{
+                            color: '#9c27b0',
+                            transition: 'all 0.3s ease-in-out',
+                            '&:hover': {
+                                color: '#9c27b0',
+                                transform: 'scale(.9)',
+                                fontWeight: 800
+                            }
+                        }}
+                    >
+                        Analytics
+                    </Button>
+
+                    <Button
+                        startIcon={<HearingIcon />}
+                        onClick={() => handleButtonClick('Listening')}
+                        sx={{
+                            color: '#ff9800',
+                            transition: 'all 0.3s ease-in-out',
+                            '&:hover': {
+                                color: '#ff9800',
+                                transform: 'scale(.9)',
+                                fontWeight: 800
+                            }
+                        }}
+                    >
+                        Listening
+                    </Button>
+
+                    <Button
+                        startIcon={<CampaignIcon />}
+                        onClick={() => handleButtonClick('Advocacy')}
+                        sx={{
+                            color: '#f44336',
+                            transition: 'all 0.3s ease-in-out',
+                            '&:hover': {
+                                color: '#f44336',
+                                transform: 'scale(.9)',
+                                fontWeight: 800
+                            }
+                        }}
+                    >
+                        Advocacy
+                    </Button>
+
+                    <Button
+                        startIcon={<PeopleIcon />}
+                        onClick={() => handleButtonClick('Influencer_Marketing')}
+                        sx={{
+                            color: '#3f51b5',
+                            transition: 'all 0.3s ease-in-out',
+                            '&:hover': {
+                                color: '#3f51b5',
+                                transform: 'scale(.9)',
+                                fontWeight: 800
+                            }
+                        }}
+                    >
+                        Influencer Marketing
+                    </Button>
+
                 </Box>
 
                 {/* this is the box that contain the paragraph and the image  */}
@@ -529,7 +619,6 @@ const Home = () => {
 
             <Grid
                 sx={{
-                    border: '2px solid red',
                     width: '100%',
                     display: 'flex'
                 }}
@@ -537,19 +626,18 @@ const Home = () => {
                 <Box
 
                     sx={{
-                        border: '2px solid black',
                         width: '50%',
-                        height: '60vh'
+                        height: '60vh',
+
                     }}
 
                 >
-                    <Typography fontFamily={'cambria'} fontSize={40} >Trusted partnerships & integrations across leading platforms    </Typography>
-                    <Typography fontSize={25}> SDMS builds and maintains strong network partnerships and integrations to help you unify your customer touch points and keep pace with changes in the social landscape.</Typography>
+                    <Typography fontFamily={'cambria'} fontSize={40} pl={4} pr={4}>Trusted partnerships & integrations across leading platforms    </Typography>
+                    <Typography fontSize={25} pl={4} pr={4}> SDMS builds and maintains strong network partnerships and integrations to help you unify your customer touch points and keep pace with changes in the social landscape.</Typography>
                 </Box>
 
                 <Box
                     sx={{
-                        border: '2px solid green',
                         width: '50%',
                         height: '60vh',
                         fontSize: '10vh',
@@ -560,84 +648,35 @@ const Home = () => {
                         gap: 2,
                     }}
                 >
-                    <Button sx={{
-                        bgcolor: '#000000',
-                        color: '#ffffff',
-                        fontSize: '10vh',
-                        
-                        '&:hover': {
-                            bgcolor: '#ffffff',
-                            color: '#000000',
-                        }
-                    }}>
-                        <FaTiktok />
-                    </Button>
-
-                    <Button sx={{
-                        bgcolor: '#E1306C',
-                        color: '#ffffff',
-                        fontSize: '10vh',
-                        
-                        '&:hover': {
-                            bgcolor: '#ffffff',
-                            color: '#E1306C',
-                        }
-                    }}>
-                        <FaInstagram />
-                    </Button>
-
-                    <Button sx={{
-                        bgcolor: '#1877F2',
-                        color: '#ffffff',
-                        fontSize: '10vh',
-                        
-                        '&:hover': {
-                            bgcolor: '#ffffff',
-                            color: '#1877F2',
-                        }
-                    }}>
-                        <FaFacebook />
-                    </Button>
-
-                    <Button sx={{
-                        bgcolor: '#0077B5',
-                        color: '#ffffff',
-                        fontSize: '10vh',
-                        
-                        '&:hover': {
-                            bgcolor: '#ffffff',
-                            color: '#0077B5',
-                        }
-                    }}>
-                        <FaLinkedin />
-                    </Button>
-
-                    <Button sx={{
-                        bgcolor: '#FF0000',
-                        color: '#ffffff',
-                        fontSize: '10vh',
-                        
-                        '&:hover': {
-                            bgcolor: '#ffffff',
-                            color: '#FF0000',
-                        }
-                    }}>
-                        <FaYoutube />
-                    </Button>
-
-                    <Button sx={{
-                        bgcolor: '#000000',
-                        color: '#ffffff',
-                        fontSize: '10vh',
-                        
-                        '&:hover': {
-                            bgcolor: '#ffffff',
-                            color: '#000000',
-                        }
-                    }}>
-                        <FaTwitter />
-                    </Button>
+                    {[
+                        { icon: <FaTiktok />, color: '#000000' },
+                        { icon: <FaInstagram />, color: '#E1306C' },
+                        { icon: <FaFacebook />, color: '#1877F2' },
+                        { icon: <FaLinkedin />, color: '#0077B5' },
+                        { icon: <FaYoutube />, color: '#FF0000' },
+                        { icon: <FaTwitter />, color: '#000000' },
+                    ].map((item, i) => (
+                        <Button
+                            key={i}
+                            sx={{
+                                bgcolor: item.color,
+                                color: '#ffffff',
+                                fontSize: '10vh',
+                                boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.3)',
+                                transition: 'all 0.3s ease-in-out',
+                                boxShadow: `10px 8px 20px ${item.color}80`, // 80 = ~50% opacity
+                                '&:hover': {
+                                    bgcolor: '#ffffff',
+                                    color: item.color,
+                                    transform: 'scale(1.1)',
+                                },
+                            }}
+                        >
+                            {item.icon}
+                        </Button>
+                    ))}
                 </Box>
+
             </Grid>
 
         </Grid>
