@@ -9,7 +9,7 @@ const About = () => {
                 background: 'linear-gradient(to bottom right, rgb(8, 39, 33),rgb(8, 39, 33),rgb(8, 39, 33),rgb(4, 75, 63), rgb(30, 147, 46))',
                 color: '#fff',
                 p: 8,
-                
+
                 '&::before': {
                     content: '""',
                     position: 'absolute',
@@ -17,7 +17,7 @@ const About = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    height:'1110px',
+                    height: '1110px',
                     zIndex: -2,
                 },
                 '&::after': {
@@ -28,8 +28,8 @@ const About = () => {
                     right: 0,
                     bottom: 0,
                     backgroundColor: 'rgba(0,0,0,.9)',
-                    height:'1110px',
-                    zIndex:-1
+                    height: '1110px',
+                    zIndex: -1
                 }
             }}
         >
@@ -85,12 +85,13 @@ const About = () => {
                                     borderRadius: 3,
                                     display: 'flex',
                                     flexDirection: 'column',
-                                    ':hover':{
-                                        transform:'scale(.98)',
-                                        boxShadow:'2px 2px 2px 2px black',
-                                        backgroundColor:'lightblue',
-                                        cursor:'pointer',
-                                        transition:'all 0.3s ease'
+                                    ':hover': {
+                                        transform: 'scale(0.98) rotate(1deg)',                                      boxShadow: '2px 2px 2px 2px black',
+                                        backgroundColor: 'lightblue',
+                                        cursor: 'pointer',
+                                        transition: 'all 0.3s ease',
+                                        
+
                                     }
 
                                 }}
