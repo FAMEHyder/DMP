@@ -1,89 +1,46 @@
-// import React, { useEffect, useState } from 'react';
-// import {
-//   Box, Button, Typography, CircularProgress, useMediaQuery, useTheme
-// } from '@mui/material';
+(function() {
+  "use strict";
 
-// const FacebookTokenFetcher = () => {
-//   const [loading, setLoading] = useState(false);
-//   const [pageToken, setPageToken] = useState('');
-//   const [error, setError] = useState('');
-//   const theme = useTheme();
-//   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  // Your Facebook Page URL (change to your page)
+  var facebookPageURL = "https://www.facebook.com/YourPageName";
 
-//   useEffect(() => {
-//     // Initialize FB SDK
-//     window.fbAsyncInit = function () {
-//       window.FB.init({
-//         appId: 'YOUR_APP_ID',
-//         cookie: true,
-//         xfbml: true,
-//         version: 'v19.0',
-//       });
-//     };
-//   }, []);
+  // Create Facebook Page Plugin iframe src URL
+  // Using official Facebook Page Plugin parameters (adjust width, height, tabs etc.)
+  var iframeSrc = `https://www.facebook.com/plugins/page.php?href=${encodeURIComponent(facebookPageURL)}&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId`;
 
-//   const handleLogin = () => {
-//     setLoading(true);
-//     setError('');
+  // Create iframe element
+  var iframe = document.createElement("iframe");
+  iframe.src = iframeSrc;
+  iframe.width = "340";
+  iframe.height = "500";
+  iframe.style.border = "none";
+  iframe.style.overflow = "hidden";
+  iframe.scrolling = "no";
+  iframe.frameBorder = "0";
+  iframe.allowTransparency = true;
+  iframe.allow = "encrypted-media";
 
-//     window.FB.login(response => {
-//       if (response.authResponse) {
-//         const userToken = response.authResponse.accessToken;
+  // Message handler to relay messages between parent and iframe (optional, depends on your use case)
+  var messageHandler = function(event) {
+    // Only accept messages from Facebook domains for security
+    if (event.origin.includes("facebook.com")) {
+      var targetWindow = window.opener || window.parent || window;
+      if (!targetWindow) return;
+      // Forward message data
+      targetWindow.postMessage(event.data, "*");
+    } else {
+      // Forward messages from parent to iframe
+      iframe.contentWindow.postMessage(event.data, "*");
+    }
+  };
 
-//         // Get list of pages
-//         window.FB.api('/me/accounts', { access_token: userToken }, function (res) {
-//           if (res && !res.error && res.data.length > 0) {
-//             const page = res.data[0]; // Just grab the first page
-//             setPageToken(page.access_token);
-//           } else {
-//             setError('Unable to fetch pages or no pages found.');
-//           }
-//           setLoading(false);
-//         });
+  // Setup event listener for postMessage communication
+  if (window.addEventListener) {
+    window.addEventListener("message", messageHandler, false);
+  } else if (window.attachEvent) {
+    window.attachEvent("onmessage", messageHandler);
+  }
 
-//       } else {
-//         setError('User cancelled login or did not fully authorize.');
-//         setLoading(false);
-//       }
-//     }, { scope: 'pages_show_list,pages_read_engagement' });
-//   };
-
-//   return (
-//     <Box
-//       sx={{
-//         p: 4,
-//         display: 'flex',
-//         flexDirection: 'column',
-//         alignItems: 'center',
-//         gap: 2,
-//         width: isMobile ? '100%' : '50%',
-//         margin: 'auto'
-//       }}
-//     >
-//       <Typography variant="h5" fontWeight={600}>
-//         Fetch Facebook Page Token
-//       </Typography>
-
-//       <Button variant="contained" onClick={handleLogin} disabled={loading}>
-//         {loading ? <CircularProgress size={24} color="inherit" /> : 'Connect Facebook'}
-//       </Button>
-
-//       {pageToken && (
-//         <Box sx={{ mt: 2 }}>
-//           <Typography variant="body1" color="success.main">
-//             Page Token:
-//           </Typography>
-//           <Typography sx={{ wordBreak: 'break-all' }}>{pageToken}</Typography>
-//         </Box>
-//       )}
-
-//       {error && (
-//         <Typography color="error" mt={2}>
-//           {error}
-//         </Typography>
-//       )}
-//     </Box>
-//   );
-// };
-
-// export default FacebookTokenFetcher;
+  // Append iframe to the body (or wherever you want)
+  document.body.appendChild(iframe);
+})();
