@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 
 const Facebook = ({ 
-  pageUrl = "https://www.facebook.com/facebook",
+  pageUrl = "https://www.facebook.com/fame.hyder",
   width = 340,
   height = 500,
   tabs = "timeline",
@@ -131,7 +131,7 @@ const Facebook = ({
     <Box sx={{ 
       width: '100%', 
       maxWidth: isMobile ? '100%' : width,
-      position: 'relative'
+      position: 'relative',
     }}>
       {!isLoaded && (
         <Paper elevation={0} sx={{ 
