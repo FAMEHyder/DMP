@@ -10,7 +10,7 @@ const ProfitWellTracker = ({ publicApiToken, email, siteType = 'marketing' }) =>
       return;
     }
 
-    // Queue profitwell calls until script loads
+    
     window.profitwell = window.profitwell || function () {
       window.profitwell.q = window.profitwell.q || [];
       window.profitwell.q.push(arguments);
