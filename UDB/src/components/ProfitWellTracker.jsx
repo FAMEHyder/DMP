@@ -4,17 +4,19 @@ import { Box, Typography, CircularProgress } from '@mui/material';
 
 const ProfitWellTracker = ({ publicApiToken, email, siteType = 'marketing' }) => {
   useEffect(() => {
+    // Guard clause
     if (!publicApiToken) {
       console.warn('ProfitWell publicApiToken is required.');
       return;
     }
 
-    
+    // Queue profitwell calls unz
     window.profitwell = window.profitwell || function () {
       window.profitwell.q = window.profitwell.q || [];
       window.profitwell.q.push(arguments);
     };
 
+    // Inject ProfitWell script
     const script = document.createElement('script');
     script.src = `https://public.profitwell.com/js/profitwell.js?auth=${publicApiToken}`;
     script.async = true;
@@ -22,6 +24,7 @@ const ProfitWellTracker = ({ publicApiToken, email, siteType = 'marketing' }) =>
     script.onload = () => {
       window.profitwell('auth_token', publicApiToken);
 
+      // Start tracking
       if (email) {
         window.profitwell('start', { user_email: email });
       } else if (siteType === 'marketing') {
@@ -31,6 +34,7 @@ const ProfitWellTracker = ({ publicApiToken, email, siteType = 'marketing' }) =>
 
     document.body.appendChild(script);
 
+    // Cleanup
     return () => {
       if (script) {
         document.body.removeChild(script);
