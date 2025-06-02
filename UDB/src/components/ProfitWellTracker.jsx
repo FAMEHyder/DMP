@@ -31,7 +31,6 @@ const ProfitWellTracker = ({ publicApiToken, email, siteType = 'marketing' }) =>
 
     document.body.appendChild(script);
 
-    // Cleanup
     return () => {
       if (script) {
         document.body.removeChild(script);
