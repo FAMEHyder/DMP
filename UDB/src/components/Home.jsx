@@ -252,7 +252,7 @@ const Home = () => {
                                 padding: 0,
                                 margin: 0,
                                 flexShrink: 1,
-                                display: 'inline-flex', // or 'flex' based on layout
+                                display: 'inline-flex', 
                                 justifyContent: 'center',
                                 alignItems: 'center',
                             }}
