@@ -1,12 +1,5 @@
 import React, { useState, useLocation } from 'react';
-import {
-    Box,
-    Grid,
-    useTheme,
-    useMediaQuery,
-    Button,
-    Typography
-} from '@mui/material';
+import {Box,Grid,useTheme,useMediaQuery,Button,Typography} from '@mui/material';
 import FirstImage from '../image/fb.png';
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
