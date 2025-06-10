@@ -56,7 +56,7 @@ const Footer = () => {
             <Link href="https://chat.whatsapp.com/LTdgqmbPcUi5JBqLqvN8qp " target="_blank" color="inherit" underline="none">
               <WhatsApp />
             </Link>
-            <Link href="instagram link will go here" target="_blank" color="inherit" underline="none">
+            <Link href="https://www.instagram.com/fame_hyder/" target="_blank" color="inherit" underline="none">
               <Instagram />
             </Link>
           </Box>
