@@ -10,6 +10,7 @@ const ProfitWellTracker = ({ publicApiToken, email, siteType = 'marketing' }) =>
       return;
     }
 
+
     window.profitwell = window.profitwell || function () {
       window.profitwell.q = window.profitwell.q || [];
       window.profitwell.q.push(arguments);
