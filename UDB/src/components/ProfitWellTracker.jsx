@@ -24,7 +24,6 @@ const ProfitWellTracker = ({ publicApiToken, email, siteType = 'marketing' }) =>
     script.onload = () => {
       window.profitwell('auth_token', publicApiToken);
 
-      // Start tracking
       if (email) {
         window.profitwell('start', { user_email: email });
       } else if (siteType === 'marketing') {
