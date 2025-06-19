@@ -4,7 +4,7 @@ import { Box, Typography, CircularProgress } from '@mui/material';
 
 const ProfitWellTracker = ({ publicApiToken, email, siteType = 'marketing' }) => {
   useEffect(() => {
-    // Guard clause
+
     if (!publicApiToken) {
       console.warn('ProfitWell publicApiToken is required.');
       return;
