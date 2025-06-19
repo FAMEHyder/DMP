@@ -16,6 +16,7 @@ const ProfitWellTracker = ({ publicApiToken, email, siteType = 'marketing' }) =>
       window.profitwell.q.push(arguments);
     };
 
+    
     const script = document.createElement('script');
     script.src = `https://public.profitwell.com/js/profitwell.js?auth=${publicApiToken}`;
     script.async = true;
