@@ -43,7 +43,7 @@ const Navbar = () => {
   };
 
   const handleMenuClose = () => {
-    setAnchorEl(null); // Close dropdown
+    setAnchorEl(null); 
   };
   // this is an array of objects
   const navItems = [
