@@ -45,7 +45,6 @@ const Navbar = () => {
   const handleMenuClose = () => {
     setAnchorEl(null); 
   };
-  // this is an array of objects
   const navItems = [
     { label: 'SIGN UP', path: '/signup' },
     { label: 'SIGN IN', path: '/signin' },
