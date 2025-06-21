@@ -39,7 +39,7 @@ const Navbar = () => {
   };
 
   const handleMenuClick = (event) => {
-    setAnchorEl(event.currentTarget); // Open dropdown
+    setAnchorEl(event.currentTarget); 
   };
 
   const handleMenuClose = () => {
