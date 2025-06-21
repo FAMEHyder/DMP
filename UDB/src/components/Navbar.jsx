@@ -35,22 +35,24 @@ const Navbar = () => {
       navigate(path);
       setDrawerOpen(false);
       setLoading(false);
-    }, 500); 
+    }, 500); // simulate delay
   };
 
   const handleMenuClick = (event) => {
-    setAnchorEl(event.currentTarget); 
+    setAnchorEl(event.currentTarget); // Open dropdown
   };
 
   const handleMenuClose = () => {
-    setAnchorEl(null); 
+    setAnchorEl(null); // Close dropdown
   };
+  // this is an array of objects
   const navItems = [
     { label: 'SIGN UP', path: '/signup' },
     { label: 'SIGN IN', path: '/signin' },
     { label: 'CONTACT US', path: '/contact' },
     { label: 'ABOUT US', path: '/about' }
   ];
+  // it is also an array of objects
   const platformItems = [
     { label: 'Facebook', path: '/facebook' },
     { label: 'X (Twitter)', path: '/twitter' },
