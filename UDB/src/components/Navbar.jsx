@@ -35,7 +35,7 @@ const Navbar = () => {
       navigate(path);
       setDrawerOpen(false);
       setLoading(false);
-    }, 500); // simulate delay
+    }, 500); 
   };
 
   const handleMenuClick = (event) => {
